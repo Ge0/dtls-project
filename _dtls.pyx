@@ -50,6 +50,7 @@ cdef extern from "arpa/inet.h":
 cdef extern from "openssl/ssl.h":
     ctypedef struct SSL
     ctypedef struct SSL_CTX
+    ctypedef struct EVP_PKEY
     int SSL_OP_NO_TICKET
     int BIO_CTRL_DGRAM_CONNECT
 
@@ -69,6 +70,17 @@ cdef extern from "openssl/ssl.h":
     int SSL_write(SSL* ssl, const char* buf, int num)
     int SSL_read(SSL* ssl, char* buf, int num)
 
+    int SSL_CTX_use_certificate_file(SSL_CTX *ctx, const char *file, int type)
+    int SSL_CTX_use_PrivateKey_file(SSL_CTX *ctx, const char *file, int type)
+    int SSL_CTX_use_certificate_ASN1(SSL_CTX *ctx, int len, const unsigned char *d)
+    int SSL_CTX_use_PrivateKey_ASN1(int type, SSL_CTX *ctx, const unsigned char *d, int len)
+    int SSL_CTX_use_certificate_chain_file(SSL_CTX *ctx, const char *file)
+    int SSL_CTX_check_private_key(SSL_CTX *ctx)
+    int SSL_CTX_use_PrivateKey(SSL_CTX *ctx, EVP_PKEY *pkey)
+
+    int SSL_FILETYPE_PEM
+    int SSL_FILETYPE_ASN1
+
 
 def get_dtls_method():
     return <uintptr_t>DTLS_method()
@@ -78,14 +90,13 @@ def create_dtls_context():
     cdef SSL_CTX *ctx = SSL_CTX_new(DTLS_method())
     if ctx == NULL:
         raise MemoryError("Cannot create the DTLS context.")
+    return <uintptr_t>ctx
 
-    cdef SSL *ssl = <SSL *>SSL_new(ctx)
+
+def create_ssl_handle(uintptr_t ssl_context):
+    cdef SSL *ssl = <SSL *>SSL_new(<SSL_CTX *>ssl_context)
     if ssl == NULL:
-        SSL_CTX_free(ctx)
         raise MemoryError("Cannot create the SSL object.")
-    
-    if SSL_set_cipher_list(ssl, b"AES128-GCM-SHA256:AES256-GCM-SHA384:CHACHA20-POLY1305:ECDHE-RSA-AES128-GCM-SHA256") != 1:
-        raise ValueError("Cannot set shared ciphers.")
     return <uintptr_t>ssl
 
 
@@ -106,7 +117,6 @@ def dtls_bind(int sockfd, int port, str ip="127.0.0.1"):
     if bind(sockfd, <const sockaddr *>&server_addr, sizeof(server_addr)) < 0:
         raise OSError("Cannot bind the socket to the specified port.")
     return sockfd
-
 
 
 def dtls_connect(uintptr_t ssl_ptr, int sockfd, str ip, int port):
@@ -138,6 +148,7 @@ def attach_socket_to_ssl(uintptr_t ssl_ptr, int sockfd):
     
     SSL_set_bio(ssl, bio, bio)
 
+
 def dtls_accept(uintptr_t ssl_ptr):
     cdef SSL *ssl = <SSL *>ssl_ptr
     cdef int result
@@ -149,6 +160,7 @@ def dtls_accept(uintptr_t ssl_ptr):
         ERR_error_string(err_code, err_buf)
         raise OSError(f"SSL_accept failed: {err_buf.decode('utf-8')}")
     return result
+
 
 def dtls_handshake(uintptr_t ssl_ptr, bint is_server=False):
     cdef SSL *ssl = <SSL *>ssl_ptr
@@ -190,3 +202,15 @@ def dtls_recv(uintptr_t ssl_ptr, int bufsize):
     result = PyBytes_FromStringAndSize(buf, received_bytes)
     free(buf)
     return result
+
+
+def dtls_load_certificate_pem_file(uintptr_t ctx_ptr, str filename):
+    cdef SSL_CTX *ctx = <SSL_CTX *>ctx_ptr
+    if SSL_CTX_use_certificate_file(ctx, filename.encode(), SSL_FILETYPE_PEM) != 1:
+        raise OSError("Cannot load certificate.")
+
+
+def dtls_load_private_private_key_pem_file(uintptr_t ctx_ptr, str filename):
+    cdef SSL_CTX *ctx = <SSL_CTX *>ctx_ptr
+    if SSL_CTX_use_PrivateKey_file(ctx, filename.encode(), SSL_FILETYPE_PEM) != 1:
+        raise OSError("Cannot load private key.")

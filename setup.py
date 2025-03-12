@@ -4,7 +4,7 @@ from Cython.Build import cythonize
 ext_modules = [
     Extension(
         "dtls",
-        ["dtls.pyx"],
+        ["_dtls.pyx"],
         libraries=["ssl"],
     )
 ]
