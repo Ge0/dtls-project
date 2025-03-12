@@ -2163,7 +2163,7 @@ static PyObject *__pyx_builtin_OSError;
 static PyObject *__pyx_builtin_print;
 /* #### Code section: string_decls ### */
 static const char __pyx_k_ip[] = "ip";
-static const char __pyx_k__42[] = "?";
+static const char __pyx_k__43[] = "?";
 static const char __pyx_k_bio[] = "bio";
 static const char __pyx_k_buf[] = "buf";
 static const char __pyx_k_ctx[] = "ctx";
@@ -2231,15 +2231,16 @@ static PyObject *__pyx_pf_4dtls_get_dtls_method(CYTHON_UNUSED PyObject *__pyx_se
 static PyObject *__pyx_pf_4dtls_2create_dtls_context(CYTHON_UNUSED PyObject *__pyx_self); /* proto */
 static PyObject *__pyx_pf_4dtls_4create_ssl_handle(CYTHON_UNUSED PyObject *__pyx_self, uintptr_t __pyx_v_ssl_context); /* proto */
 static PyObject *__pyx_pf_4dtls_6create_dtls_socket(CYTHON_UNUSED PyObject *__pyx_self); /* proto */
-static PyObject *__pyx_pf_4dtls_8dtls_bind(CYTHON_UNUSED PyObject *__pyx_self, int __pyx_v_sockfd, int __pyx_v_port, PyObject *__pyx_v_ip); /* proto */
-static PyObject *__pyx_pf_4dtls_10dtls_connect(CYTHON_UNUSED PyObject *__pyx_self, uintptr_t __pyx_v_ssl_ptr, int __pyx_v_sockfd, PyObject *__pyx_v_ip, int __pyx_v_port); /* proto */
-static PyObject *__pyx_pf_4dtls_12attach_socket_to_ssl(CYTHON_UNUSED PyObject *__pyx_self, uintptr_t __pyx_v_ssl_ptr, int __pyx_v_sockfd); /* proto */
-static PyObject *__pyx_pf_4dtls_14dtls_accept(CYTHON_UNUSED PyObject *__pyx_self, uintptr_t __pyx_v_ssl_ptr); /* proto */
-static PyObject *__pyx_pf_4dtls_16dtls_handshake(CYTHON_UNUSED PyObject *__pyx_self, uintptr_t __pyx_v_ssl_ptr, int __pyx_v_is_server); /* proto */
-static PyObject *__pyx_pf_4dtls_18dtls_send(CYTHON_UNUSED PyObject *__pyx_self, uintptr_t __pyx_v_ssl_ptr, PyObject *__pyx_v_data); /* proto */
-static PyObject *__pyx_pf_4dtls_20dtls_recv(CYTHON_UNUSED PyObject *__pyx_self, uintptr_t __pyx_v_ssl_ptr, int __pyx_v_bufsize); /* proto */
-static PyObject *__pyx_pf_4dtls_22dtls_load_certificate_pem_file(CYTHON_UNUSED PyObject *__pyx_self, uintptr_t __pyx_v_ctx_ptr, PyObject *__pyx_v_filename); /* proto */
-static PyObject *__pyx_pf_4dtls_24dtls_load_private_private_key_pem_file(CYTHON_UNUSED PyObject *__pyx_self, uintptr_t __pyx_v_ctx_ptr, PyObject *__pyx_v_filename); /* proto */
+static PyObject *__pyx_pf_4dtls_8attach_socket_to_ssl(CYTHON_UNUSED PyObject *__pyx_self, uintptr_t __pyx_v_ssl_ptr, int __pyx_v_sockfd); /* proto */
+static PyObject *__pyx_pf_4dtls_10dtls_bind(CYTHON_UNUSED PyObject *__pyx_self, int __pyx_v_sockfd, int __pyx_v_port, PyObject *__pyx_v_ip); /* proto */
+static PyObject *__pyx_pf_4dtls_12dtls_connect(CYTHON_UNUSED PyObject *__pyx_self, uintptr_t __pyx_v_ssl_ptr, int __pyx_v_sockfd, PyObject *__pyx_v_ip, int __pyx_v_port); /* proto */
+static PyObject *__pyx_pf_4dtls_14attach_socket_to_ssl(CYTHON_UNUSED PyObject *__pyx_self, uintptr_t __pyx_v_ssl_ptr, int __pyx_v_sockfd); /* proto */
+static PyObject *__pyx_pf_4dtls_16dtls_accept(CYTHON_UNUSED PyObject *__pyx_self, uintptr_t __pyx_v_ssl_ptr); /* proto */
+static PyObject *__pyx_pf_4dtls_18dtls_handshake(CYTHON_UNUSED PyObject *__pyx_self, uintptr_t __pyx_v_ssl_ptr, int __pyx_v_is_server); /* proto */
+static PyObject *__pyx_pf_4dtls_20dtls_send(CYTHON_UNUSED PyObject *__pyx_self, uintptr_t __pyx_v_ssl_ptr, PyObject *__pyx_v_data); /* proto */
+static PyObject *__pyx_pf_4dtls_22dtls_recv(CYTHON_UNUSED PyObject *__pyx_self, uintptr_t __pyx_v_ssl_ptr, int __pyx_v_bufsize); /* proto */
+static PyObject *__pyx_pf_4dtls_24dtls_load_certificate_pem_file(CYTHON_UNUSED PyObject *__pyx_self, uintptr_t __pyx_v_ctx_ptr, PyObject *__pyx_v_filename); /* proto */
+static PyObject *__pyx_pf_4dtls_26dtls_load_private_private_key_pem_file(CYTHON_UNUSED PyObject *__pyx_self, uintptr_t __pyx_v_ctx_ptr, PyObject *__pyx_v_filename); /* proto */
 static __Pyx_CachedCFunction __pyx_umethod_PyString_Type_encode = {0, 0, 0, 0, 0};
 /* #### Code section: late_includes ### */
 /* #### Code section: module_state ### */
@@ -2314,7 +2315,7 @@ typedef struct {
   PyObject *__pyx_n_s_MemoryError;
   PyObject *__pyx_n_s_OSError;
   PyObject *__pyx_kp_u_SSL_accept_failed;
-  PyObject *__pyx_n_s__42;
+  PyObject *__pyx_n_s__43;
   PyObject *__pyx_n_s_asyncio_coroutines;
   PyObject *__pyx_n_s_attach_socket_to_ssl;
   PyObject *__pyx_n_s_bio;
@@ -2380,26 +2381,27 @@ typedef struct {
   PyObject *__pyx_tuple__22;
   PyObject *__pyx_tuple__24;
   PyObject *__pyx_tuple__26;
-  PyObject *__pyx_tuple__27;
+  PyObject *__pyx_tuple__28;
   PyObject *__pyx_tuple__29;
-  PyObject *__pyx_tuple__31;
-  PyObject *__pyx_tuple__33;
-  PyObject *__pyx_tuple__35;
-  PyObject *__pyx_tuple__37;
-  PyObject *__pyx_tuple__39;
+  PyObject *__pyx_tuple__32;
+  PyObject *__pyx_tuple__34;
+  PyObject *__pyx_tuple__36;
+  PyObject *__pyx_tuple__38;
+  PyObject *__pyx_tuple__40;
   PyObject *__pyx_codeobj__17;
   PyObject *__pyx_codeobj__19;
   PyObject *__pyx_codeobj__21;
   PyObject *__pyx_codeobj__23;
   PyObject *__pyx_codeobj__25;
-  PyObject *__pyx_codeobj__28;
+  PyObject *__pyx_codeobj__27;
   PyObject *__pyx_codeobj__30;
-  PyObject *__pyx_codeobj__32;
-  PyObject *__pyx_codeobj__34;
-  PyObject *__pyx_codeobj__36;
-  PyObject *__pyx_codeobj__38;
-  PyObject *__pyx_codeobj__40;
+  PyObject *__pyx_codeobj__31;
+  PyObject *__pyx_codeobj__33;
+  PyObject *__pyx_codeobj__35;
+  PyObject *__pyx_codeobj__37;
+  PyObject *__pyx_codeobj__39;
   PyObject *__pyx_codeobj__41;
+  PyObject *__pyx_codeobj__42;
 } __pyx_mstate;
 
 #if CYTHON_USE_MODULE_STATE
@@ -2462,7 +2464,7 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_n_s_MemoryError);
   Py_CLEAR(clear_module_state->__pyx_n_s_OSError);
   Py_CLEAR(clear_module_state->__pyx_kp_u_SSL_accept_failed);
-  Py_CLEAR(clear_module_state->__pyx_n_s__42);
+  Py_CLEAR(clear_module_state->__pyx_n_s__43);
   Py_CLEAR(clear_module_state->__pyx_n_s_asyncio_coroutines);
   Py_CLEAR(clear_module_state->__pyx_n_s_attach_socket_to_ssl);
   Py_CLEAR(clear_module_state->__pyx_n_s_bio);
@@ -2528,26 +2530,27 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_tuple__22);
   Py_CLEAR(clear_module_state->__pyx_tuple__24);
   Py_CLEAR(clear_module_state->__pyx_tuple__26);
-  Py_CLEAR(clear_module_state->__pyx_tuple__27);
+  Py_CLEAR(clear_module_state->__pyx_tuple__28);
   Py_CLEAR(clear_module_state->__pyx_tuple__29);
-  Py_CLEAR(clear_module_state->__pyx_tuple__31);
-  Py_CLEAR(clear_module_state->__pyx_tuple__33);
-  Py_CLEAR(clear_module_state->__pyx_tuple__35);
-  Py_CLEAR(clear_module_state->__pyx_tuple__37);
-  Py_CLEAR(clear_module_state->__pyx_tuple__39);
+  Py_CLEAR(clear_module_state->__pyx_tuple__32);
+  Py_CLEAR(clear_module_state->__pyx_tuple__34);
+  Py_CLEAR(clear_module_state->__pyx_tuple__36);
+  Py_CLEAR(clear_module_state->__pyx_tuple__38);
+  Py_CLEAR(clear_module_state->__pyx_tuple__40);
   Py_CLEAR(clear_module_state->__pyx_codeobj__17);
   Py_CLEAR(clear_module_state->__pyx_codeobj__19);
   Py_CLEAR(clear_module_state->__pyx_codeobj__21);
   Py_CLEAR(clear_module_state->__pyx_codeobj__23);
   Py_CLEAR(clear_module_state->__pyx_codeobj__25);
-  Py_CLEAR(clear_module_state->__pyx_codeobj__28);
+  Py_CLEAR(clear_module_state->__pyx_codeobj__27);
   Py_CLEAR(clear_module_state->__pyx_codeobj__30);
-  Py_CLEAR(clear_module_state->__pyx_codeobj__32);
-  Py_CLEAR(clear_module_state->__pyx_codeobj__34);
-  Py_CLEAR(clear_module_state->__pyx_codeobj__36);
-  Py_CLEAR(clear_module_state->__pyx_codeobj__38);
-  Py_CLEAR(clear_module_state->__pyx_codeobj__40);
+  Py_CLEAR(clear_module_state->__pyx_codeobj__31);
+  Py_CLEAR(clear_module_state->__pyx_codeobj__33);
+  Py_CLEAR(clear_module_state->__pyx_codeobj__35);
+  Py_CLEAR(clear_module_state->__pyx_codeobj__37);
+  Py_CLEAR(clear_module_state->__pyx_codeobj__39);
   Py_CLEAR(clear_module_state->__pyx_codeobj__41);
+  Py_CLEAR(clear_module_state->__pyx_codeobj__42);
   return 0;
 }
 #endif
@@ -2588,7 +2591,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_n_s_MemoryError);
   Py_VISIT(traverse_module_state->__pyx_n_s_OSError);
   Py_VISIT(traverse_module_state->__pyx_kp_u_SSL_accept_failed);
-  Py_VISIT(traverse_module_state->__pyx_n_s__42);
+  Py_VISIT(traverse_module_state->__pyx_n_s__43);
   Py_VISIT(traverse_module_state->__pyx_n_s_asyncio_coroutines);
   Py_VISIT(traverse_module_state->__pyx_n_s_attach_socket_to_ssl);
   Py_VISIT(traverse_module_state->__pyx_n_s_bio);
@@ -2654,26 +2657,27 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_tuple__22);
   Py_VISIT(traverse_module_state->__pyx_tuple__24);
   Py_VISIT(traverse_module_state->__pyx_tuple__26);
-  Py_VISIT(traverse_module_state->__pyx_tuple__27);
+  Py_VISIT(traverse_module_state->__pyx_tuple__28);
   Py_VISIT(traverse_module_state->__pyx_tuple__29);
-  Py_VISIT(traverse_module_state->__pyx_tuple__31);
-  Py_VISIT(traverse_module_state->__pyx_tuple__33);
-  Py_VISIT(traverse_module_state->__pyx_tuple__35);
-  Py_VISIT(traverse_module_state->__pyx_tuple__37);
-  Py_VISIT(traverse_module_state->__pyx_tuple__39);
+  Py_VISIT(traverse_module_state->__pyx_tuple__32);
+  Py_VISIT(traverse_module_state->__pyx_tuple__34);
+  Py_VISIT(traverse_module_state->__pyx_tuple__36);
+  Py_VISIT(traverse_module_state->__pyx_tuple__38);
+  Py_VISIT(traverse_module_state->__pyx_tuple__40);
   Py_VISIT(traverse_module_state->__pyx_codeobj__17);
   Py_VISIT(traverse_module_state->__pyx_codeobj__19);
   Py_VISIT(traverse_module_state->__pyx_codeobj__21);
   Py_VISIT(traverse_module_state->__pyx_codeobj__23);
   Py_VISIT(traverse_module_state->__pyx_codeobj__25);
-  Py_VISIT(traverse_module_state->__pyx_codeobj__28);
+  Py_VISIT(traverse_module_state->__pyx_codeobj__27);
   Py_VISIT(traverse_module_state->__pyx_codeobj__30);
-  Py_VISIT(traverse_module_state->__pyx_codeobj__32);
-  Py_VISIT(traverse_module_state->__pyx_codeobj__34);
-  Py_VISIT(traverse_module_state->__pyx_codeobj__36);
-  Py_VISIT(traverse_module_state->__pyx_codeobj__38);
-  Py_VISIT(traverse_module_state->__pyx_codeobj__40);
+  Py_VISIT(traverse_module_state->__pyx_codeobj__31);
+  Py_VISIT(traverse_module_state->__pyx_codeobj__33);
+  Py_VISIT(traverse_module_state->__pyx_codeobj__35);
+  Py_VISIT(traverse_module_state->__pyx_codeobj__37);
+  Py_VISIT(traverse_module_state->__pyx_codeobj__39);
   Py_VISIT(traverse_module_state->__pyx_codeobj__41);
+  Py_VISIT(traverse_module_state->__pyx_codeobj__42);
   return 0;
 }
 #endif
@@ -2748,7 +2752,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_n_s_MemoryError __pyx_mstate_global->__pyx_n_s_MemoryError
 #define __pyx_n_s_OSError __pyx_mstate_global->__pyx_n_s_OSError
 #define __pyx_kp_u_SSL_accept_failed __pyx_mstate_global->__pyx_kp_u_SSL_accept_failed
-#define __pyx_n_s__42 __pyx_mstate_global->__pyx_n_s__42
+#define __pyx_n_s__43 __pyx_mstate_global->__pyx_n_s__43
 #define __pyx_n_s_asyncio_coroutines __pyx_mstate_global->__pyx_n_s_asyncio_coroutines
 #define __pyx_n_s_attach_socket_to_ssl __pyx_mstate_global->__pyx_n_s_attach_socket_to_ssl
 #define __pyx_n_s_bio __pyx_mstate_global->__pyx_n_s_bio
@@ -2814,26 +2818,27 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_tuple__22 __pyx_mstate_global->__pyx_tuple__22
 #define __pyx_tuple__24 __pyx_mstate_global->__pyx_tuple__24
 #define __pyx_tuple__26 __pyx_mstate_global->__pyx_tuple__26
-#define __pyx_tuple__27 __pyx_mstate_global->__pyx_tuple__27
+#define __pyx_tuple__28 __pyx_mstate_global->__pyx_tuple__28
 #define __pyx_tuple__29 __pyx_mstate_global->__pyx_tuple__29
-#define __pyx_tuple__31 __pyx_mstate_global->__pyx_tuple__31
-#define __pyx_tuple__33 __pyx_mstate_global->__pyx_tuple__33
-#define __pyx_tuple__35 __pyx_mstate_global->__pyx_tuple__35
-#define __pyx_tuple__37 __pyx_mstate_global->__pyx_tuple__37
-#define __pyx_tuple__39 __pyx_mstate_global->__pyx_tuple__39
+#define __pyx_tuple__32 __pyx_mstate_global->__pyx_tuple__32
+#define __pyx_tuple__34 __pyx_mstate_global->__pyx_tuple__34
+#define __pyx_tuple__36 __pyx_mstate_global->__pyx_tuple__36
+#define __pyx_tuple__38 __pyx_mstate_global->__pyx_tuple__38
+#define __pyx_tuple__40 __pyx_mstate_global->__pyx_tuple__40
 #define __pyx_codeobj__17 __pyx_mstate_global->__pyx_codeobj__17
 #define __pyx_codeobj__19 __pyx_mstate_global->__pyx_codeobj__19
 #define __pyx_codeobj__21 __pyx_mstate_global->__pyx_codeobj__21
 #define __pyx_codeobj__23 __pyx_mstate_global->__pyx_codeobj__23
 #define __pyx_codeobj__25 __pyx_mstate_global->__pyx_codeobj__25
-#define __pyx_codeobj__28 __pyx_mstate_global->__pyx_codeobj__28
+#define __pyx_codeobj__27 __pyx_mstate_global->__pyx_codeobj__27
 #define __pyx_codeobj__30 __pyx_mstate_global->__pyx_codeobj__30
-#define __pyx_codeobj__32 __pyx_mstate_global->__pyx_codeobj__32
-#define __pyx_codeobj__34 __pyx_mstate_global->__pyx_codeobj__34
-#define __pyx_codeobj__36 __pyx_mstate_global->__pyx_codeobj__36
-#define __pyx_codeobj__38 __pyx_mstate_global->__pyx_codeobj__38
-#define __pyx_codeobj__40 __pyx_mstate_global->__pyx_codeobj__40
+#define __pyx_codeobj__31 __pyx_mstate_global->__pyx_codeobj__31
+#define __pyx_codeobj__33 __pyx_mstate_global->__pyx_codeobj__33
+#define __pyx_codeobj__35 __pyx_mstate_global->__pyx_codeobj__35
+#define __pyx_codeobj__37 __pyx_mstate_global->__pyx_codeobj__37
+#define __pyx_codeobj__39 __pyx_mstate_global->__pyx_codeobj__39
 #define __pyx_codeobj__41 __pyx_mstate_global->__pyx_codeobj__41
+#define __pyx_codeobj__42 __pyx_mstate_global->__pyx_codeobj__42
 /* #### Code section: module_code ### */
 
 /* "dtls.pyx":85
@@ -3281,7 +3286,7 @@ static PyObject *__pyx_pf_4dtls_6create_dtls_socket(CYTHON_UNUSED PyObject *__py
  *         raise OSError("Cannot create a UDP socket.")
  *     return sockfd             # <<<<<<<<<<<<<<
  * 
- * 
+ * def attach_socket_to_ssl(uintptr_t ssl_ptr, int sockfd):
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_sockfd); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 107, __pyx_L1_error)
@@ -3309,7 +3314,218 @@ static PyObject *__pyx_pf_4dtls_6create_dtls_socket(CYTHON_UNUSED PyObject *__py
   return __pyx_r;
 }
 
-/* "dtls.pyx":110
+/* "dtls.pyx":109
+ *     return sockfd
+ * 
+ * def attach_socket_to_ssl(uintptr_t ssl_ptr, int sockfd):             # <<<<<<<<<<<<<<
+ *     cdef SSL *ssl = <SSL *>ssl_ptr
+ *     cdef BIO *bio = BIO_new_dgram(sockfd, 1)
+ */
+
+/* Python wrapper */
+static PyObject *__pyx_pw_4dtls_9attach_socket_to_ssl(PyObject *__pyx_self, 
+#if CYTHON_METH_FASTCALL
+PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
+#else
+PyObject *__pyx_args, PyObject *__pyx_kwds
+#endif
+); /*proto*/
+static PyMethodDef __pyx_mdef_4dtls_9attach_socket_to_ssl = {"attach_socket_to_ssl", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_4dtls_9attach_socket_to_ssl, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_4dtls_9attach_socket_to_ssl(PyObject *__pyx_self, 
+#if CYTHON_METH_FASTCALL
+PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
+#else
+PyObject *__pyx_args, PyObject *__pyx_kwds
+#endif
+) {
+  uintptr_t __pyx_v_ssl_ptr;
+  int __pyx_v_sockfd;
+  #if !CYTHON_METH_FASTCALL
+  CYTHON_UNUSED Py_ssize_t __pyx_nargs;
+  #endif
+  CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
+  PyObject* values[2] = {0,0};
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
+  PyObject *__pyx_r = 0;
+  __Pyx_RefNannyDeclarations
+  __Pyx_RefNannySetupContext("attach_socket_to_ssl (wrapper)", 0);
+  #if !CYTHON_METH_FASTCALL
+  #if CYTHON_ASSUME_SAFE_MACROS
+  __pyx_nargs = PyTuple_GET_SIZE(__pyx_args);
+  #else
+  __pyx_nargs = PyTuple_Size(__pyx_args); if (unlikely(__pyx_nargs < 0)) return NULL;
+  #endif
+  #endif
+  __pyx_kwvalues = __Pyx_KwValues_FASTCALL(__pyx_args, __pyx_nargs);
+  {
+    PyObject **__pyx_pyargnames[] = {&__pyx_n_s_ssl_ptr,&__pyx_n_s_sockfd,0};
+    if (__pyx_kwds) {
+      Py_ssize_t kw_args;
+      switch (__pyx_nargs) {
+        case  2: values[1] = __Pyx_Arg_FASTCALL(__pyx_args, 1);
+        CYTHON_FALLTHROUGH;
+        case  1: values[0] = __Pyx_Arg_FASTCALL(__pyx_args, 0);
+        CYTHON_FALLTHROUGH;
+        case  0: break;
+        default: goto __pyx_L5_argtuple_error;
+      }
+      kw_args = __Pyx_NumKwargs_FASTCALL(__pyx_kwds);
+      switch (__pyx_nargs) {
+        case  0:
+        if (likely((values[0] = __Pyx_GetKwValue_FASTCALL(__pyx_kwds, __pyx_kwvalues, __pyx_n_s_ssl_ptr)) != 0)) {
+          (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
+          kw_args--;
+        }
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 109, __pyx_L3_error)
+        else goto __pyx_L5_argtuple_error;
+        CYTHON_FALLTHROUGH;
+        case  1:
+        if (likely((values[1] = __Pyx_GetKwValue_FASTCALL(__pyx_kwds, __pyx_kwvalues, __pyx_n_s_sockfd)) != 0)) {
+          (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
+          kw_args--;
+        }
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 109, __pyx_L3_error)
+        else {
+          __Pyx_RaiseArgtupleInvalid("attach_socket_to_ssl", 1, 2, 2, 1); __PYX_ERR(0, 109, __pyx_L3_error)
+        }
+      }
+      if (unlikely(kw_args > 0)) {
+        const Py_ssize_t kwd_pos_args = __pyx_nargs;
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "attach_socket_to_ssl") < 0)) __PYX_ERR(0, 109, __pyx_L3_error)
+      }
+    } else if (unlikely(__pyx_nargs != 2)) {
+      goto __pyx_L5_argtuple_error;
+    } else {
+      values[0] = __Pyx_Arg_FASTCALL(__pyx_args, 0);
+      values[1] = __Pyx_Arg_FASTCALL(__pyx_args, 1);
+    }
+    __pyx_v_ssl_ptr = __Pyx_PyInt_As_size_t(values[0]); if (unlikely((__pyx_v_ssl_ptr == ((uintptr_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 109, __pyx_L3_error)
+    __pyx_v_sockfd = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_sockfd == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 109, __pyx_L3_error)
+  }
+  goto __pyx_L6_skip;
+  __pyx_L5_argtuple_error:;
+  __Pyx_RaiseArgtupleInvalid("attach_socket_to_ssl", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 109, __pyx_L3_error)
+  __pyx_L6_skip:;
+  goto __pyx_L4_argument_unpacking_done;
+  __pyx_L3_error:;
+  {
+    Py_ssize_t __pyx_temp;
+    for (__pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
+      __Pyx_Arg_XDECREF_FASTCALL(values[__pyx_temp]);
+    }
+  }
+  __Pyx_AddTraceback("dtls.attach_socket_to_ssl", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_RefNannyFinishContext();
+  return NULL;
+  __pyx_L4_argument_unpacking_done:;
+  __pyx_r = __pyx_pf_4dtls_8attach_socket_to_ssl(__pyx_self, __pyx_v_ssl_ptr, __pyx_v_sockfd);
+
+  /* function exit code */
+  {
+    Py_ssize_t __pyx_temp;
+    for (__pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
+      __Pyx_Arg_XDECREF_FASTCALL(values[__pyx_temp]);
+    }
+  }
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+static PyObject *__pyx_pf_4dtls_8attach_socket_to_ssl(CYTHON_UNUSED PyObject *__pyx_self, uintptr_t __pyx_v_ssl_ptr, int __pyx_v_sockfd) {
+  SSL *__pyx_v_ssl;
+  BIO *__pyx_v_bio;
+  PyObject *__pyx_r = NULL;
+  __Pyx_RefNannyDeclarations
+  int __pyx_t_1;
+  PyObject *__pyx_t_2 = NULL;
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
+  __Pyx_RefNannySetupContext("attach_socket_to_ssl", 1);
+
+  /* "dtls.pyx":110
+ * 
+ * def attach_socket_to_ssl(uintptr_t ssl_ptr, int sockfd):
+ *     cdef SSL *ssl = <SSL *>ssl_ptr             # <<<<<<<<<<<<<<
+ *     cdef BIO *bio = BIO_new_dgram(sockfd, 1)
+ *     if bio == NULL:
+ */
+  __pyx_v_ssl = ((SSL *)__pyx_v_ssl_ptr);
+
+  /* "dtls.pyx":111
+ * def attach_socket_to_ssl(uintptr_t ssl_ptr, int sockfd):
+ *     cdef SSL *ssl = <SSL *>ssl_ptr
+ *     cdef BIO *bio = BIO_new_dgram(sockfd, 1)             # <<<<<<<<<<<<<<
+ *     if bio == NULL:
+ *         raise MemoryError("Cannot create a BIO DTLS.")
+ */
+  __pyx_v_bio = BIO_new_dgram(__pyx_v_sockfd, 1);
+
+  /* "dtls.pyx":112
+ *     cdef SSL *ssl = <SSL *>ssl_ptr
+ *     cdef BIO *bio = BIO_new_dgram(sockfd, 1)
+ *     if bio == NULL:             # <<<<<<<<<<<<<<
+ *         raise MemoryError("Cannot create a BIO DTLS.")
+ * 
+ */
+  __pyx_t_1 = (__pyx_v_bio == NULL);
+  if (unlikely(__pyx_t_1)) {
+
+    /* "dtls.pyx":113
+ *     cdef BIO *bio = BIO_new_dgram(sockfd, 1)
+ *     if bio == NULL:
+ *         raise MemoryError("Cannot create a BIO DTLS.")             # <<<<<<<<<<<<<<
+ * 
+ *     SSL_set_bio(ssl, bio, bio)
+ */
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_MemoryError, __pyx_tuple__4, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 113, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __Pyx_Raise(__pyx_t_2, 0, 0, 0);
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __PYX_ERR(0, 113, __pyx_L1_error)
+
+    /* "dtls.pyx":112
+ *     cdef SSL *ssl = <SSL *>ssl_ptr
+ *     cdef BIO *bio = BIO_new_dgram(sockfd, 1)
+ *     if bio == NULL:             # <<<<<<<<<<<<<<
+ *         raise MemoryError("Cannot create a BIO DTLS.")
+ * 
+ */
+  }
+
+  /* "dtls.pyx":115
+ *         raise MemoryError("Cannot create a BIO DTLS.")
+ * 
+ *     SSL_set_bio(ssl, bio, bio)             # <<<<<<<<<<<<<<
+ * 
+ * 
+ */
+  SSL_set_bio(__pyx_v_ssl, __pyx_v_bio, __pyx_v_bio);
+
+  /* "dtls.pyx":109
+ *     return sockfd
+ * 
+ * def attach_socket_to_ssl(uintptr_t ssl_ptr, int sockfd):             # <<<<<<<<<<<<<<
+ *     cdef SSL *ssl = <SSL *>ssl_ptr
+ *     cdef BIO *bio = BIO_new_dgram(sockfd, 1)
+ */
+
+  /* function exit code */
+  __pyx_r = Py_None; __Pyx_INCREF(Py_None);
+  goto __pyx_L0;
+  __pyx_L1_error:;
+  __Pyx_XDECREF(__pyx_t_2);
+  __Pyx_AddTraceback("dtls.attach_socket_to_ssl", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __pyx_r = NULL;
+  __pyx_L0:;
+  __Pyx_XGIVEREF(__pyx_r);
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+/* "dtls.pyx":118
  * 
  * 
  * def dtls_bind(int sockfd, int port, str ip="127.0.0.1"):             # <<<<<<<<<<<<<<
@@ -3318,15 +3534,15 @@ static PyObject *__pyx_pf_4dtls_6create_dtls_socket(CYTHON_UNUSED PyObject *__py
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4dtls_9dtls_bind(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_4dtls_11dtls_bind(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_4dtls_9dtls_bind = {"dtls_bind", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_4dtls_9dtls_bind, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_4dtls_9dtls_bind(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_4dtls_11dtls_bind = {"dtls_bind", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_4dtls_11dtls_bind, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_4dtls_11dtls_bind(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -3377,7 +3593,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 110, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 118, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -3385,21 +3601,21 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 110, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 118, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("dtls_bind", 0, 2, 3, 1); __PYX_ERR(0, 110, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("dtls_bind", 0, 2, 3, 1); __PYX_ERR(0, 118, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (kw_args > 0) {
           PyObject* value = __Pyx_GetKwValue_FASTCALL(__pyx_kwds, __pyx_kwvalues, __pyx_n_s_ip);
           if (value) { values[2] = __Pyx_Arg_NewRef_FASTCALL(value); kw_args--; }
-          else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 110, __pyx_L3_error)
+          else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 118, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "dtls_bind") < 0)) __PYX_ERR(0, 110, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "dtls_bind") < 0)) __PYX_ERR(0, 118, __pyx_L3_error)
       }
     } else {
       switch (__pyx_nargs) {
@@ -3411,13 +3627,13 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
         default: goto __pyx_L5_argtuple_error;
       }
     }
-    __pyx_v_sockfd = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_sockfd == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 110, __pyx_L3_error)
-    __pyx_v_port = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_port == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 110, __pyx_L3_error)
+    __pyx_v_sockfd = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_sockfd == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 118, __pyx_L3_error)
+    __pyx_v_port = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_port == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 118, __pyx_L3_error)
     __pyx_v_ip = ((PyObject*)values[2]);
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("dtls_bind", 0, 2, 3, __pyx_nargs); __PYX_ERR(0, 110, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("dtls_bind", 0, 2, 3, __pyx_nargs); __PYX_ERR(0, 118, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -3431,8 +3647,8 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_ip), (&PyString_Type), 1, "ip", 1))) __PYX_ERR(0, 110, __pyx_L1_error)
-  __pyx_r = __pyx_pf_4dtls_8dtls_bind(__pyx_self, __pyx_v_sockfd, __pyx_v_port, __pyx_v_ip);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_ip), (&PyString_Type), 1, "ip", 1))) __PYX_ERR(0, 118, __pyx_L1_error)
+  __pyx_r = __pyx_pf_4dtls_10dtls_bind(__pyx_self, __pyx_v_sockfd, __pyx_v_port, __pyx_v_ip);
 
   /* function exit code */
   goto __pyx_L0;
@@ -3449,7 +3665,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4dtls_8dtls_bind(CYTHON_UNUSED PyObject *__pyx_self, int __pyx_v_sockfd, int __pyx_v_port, PyObject *__pyx_v_ip) {
+static PyObject *__pyx_pf_4dtls_10dtls_bind(CYTHON_UNUSED PyObject *__pyx_self, int __pyx_v_sockfd, int __pyx_v_port, PyObject *__pyx_v_ip) {
   struct sockaddr_in __pyx_v_server_addr;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -3461,7 +3677,7 @@ static PyObject *__pyx_pf_4dtls_8dtls_bind(CYTHON_UNUSED PyObject *__pyx_self, i
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("dtls_bind", 1);
 
-  /* "dtls.pyx":112
+  /* "dtls.pyx":120
  * def dtls_bind(int sockfd, int port, str ip="127.0.0.1"):
  *     cdef sockaddr_in server_addr
  *     memset(&server_addr, 0, sizeof(server_addr))             # <<<<<<<<<<<<<<
@@ -3470,7 +3686,7 @@ static PyObject *__pyx_pf_4dtls_8dtls_bind(CYTHON_UNUSED PyObject *__pyx_self, i
  */
   (void)(memset((&__pyx_v_server_addr), 0, (sizeof(__pyx_v_server_addr))));
 
-  /* "dtls.pyx":113
+  /* "dtls.pyx":121
  *     cdef sockaddr_in server_addr
  *     memset(&server_addr, 0, sizeof(server_addr))
  *     server_addr.sin_family = AF_INET             # <<<<<<<<<<<<<<
@@ -3479,7 +3695,7 @@ static PyObject *__pyx_pf_4dtls_8dtls_bind(CYTHON_UNUSED PyObject *__pyx_self, i
  */
   __pyx_v_server_addr.sin_family = AF_INET;
 
-  /* "dtls.pyx":114
+  /* "dtls.pyx":122
  *     memset(&server_addr, 0, sizeof(server_addr))
  *     server_addr.sin_family = AF_INET
  *     server_addr.sin_port = htons(port)             # <<<<<<<<<<<<<<
@@ -3488,20 +3704,20 @@ static PyObject *__pyx_pf_4dtls_8dtls_bind(CYTHON_UNUSED PyObject *__pyx_self, i
  */
   __pyx_v_server_addr.sin_port = htons(__pyx_v_port);
 
-  /* "dtls.pyx":115
+  /* "dtls.pyx":123
  *     server_addr.sin_family = AF_INET
  *     server_addr.sin_port = htons(port)
  *     server_addr.sin_addr.s_addr = inet_addr(ip.encode())             # <<<<<<<<<<<<<<
  * 
  *     if bind(sockfd, <const sockaddr *>&server_addr, sizeof(server_addr)) < 0:
  */
-  __pyx_t_1 = __Pyx_CallUnboundCMethod0(&__pyx_umethod_PyString_Type_encode, __pyx_v_ip); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 115, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CallUnboundCMethod0(&__pyx_umethod_PyString_Type_encode, __pyx_v_ip); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 123, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_AsString(__pyx_t_1); if (unlikely((!__pyx_t_2) && PyErr_Occurred())) __PYX_ERR(0, 115, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_AsString(__pyx_t_1); if (unlikely((!__pyx_t_2) && PyErr_Occurred())) __PYX_ERR(0, 123, __pyx_L1_error)
   __pyx_v_server_addr.sin_addr.s_addr = inet_addr(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "dtls.pyx":117
+  /* "dtls.pyx":125
  *     server_addr.sin_addr.s_addr = inet_addr(ip.encode())
  * 
  *     if bind(sockfd, <const sockaddr *>&server_addr, sizeof(server_addr)) < 0:             # <<<<<<<<<<<<<<
@@ -3511,20 +3727,20 @@ static PyObject *__pyx_pf_4dtls_8dtls_bind(CYTHON_UNUSED PyObject *__pyx_self, i
   __pyx_t_3 = (bind(__pyx_v_sockfd, ((struct sockaddr const *)(&__pyx_v_server_addr)), (sizeof(__pyx_v_server_addr))) < 0);
   if (unlikely(__pyx_t_3)) {
 
-    /* "dtls.pyx":118
+    /* "dtls.pyx":126
  * 
  *     if bind(sockfd, <const sockaddr *>&server_addr, sizeof(server_addr)) < 0:
  *         raise OSError("Cannot bind the socket to the specified port.")             # <<<<<<<<<<<<<<
  *     return sockfd
  * 
  */
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_OSError, __pyx_tuple__4, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 118, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_OSError, __pyx_tuple__5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 126, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 118, __pyx_L1_error)
+    __PYX_ERR(0, 126, __pyx_L1_error)
 
-    /* "dtls.pyx":117
+    /* "dtls.pyx":125
  *     server_addr.sin_addr.s_addr = inet_addr(ip.encode())
  * 
  *     if bind(sockfd, <const sockaddr *>&server_addr, sizeof(server_addr)) < 0:             # <<<<<<<<<<<<<<
@@ -3533,7 +3749,7 @@ static PyObject *__pyx_pf_4dtls_8dtls_bind(CYTHON_UNUSED PyObject *__pyx_self, i
  */
   }
 
-  /* "dtls.pyx":119
+  /* "dtls.pyx":127
  *     if bind(sockfd, <const sockaddr *>&server_addr, sizeof(server_addr)) < 0:
  *         raise OSError("Cannot bind the socket to the specified port.")
  *     return sockfd             # <<<<<<<<<<<<<<
@@ -3541,13 +3757,13 @@ static PyObject *__pyx_pf_4dtls_8dtls_bind(CYTHON_UNUSED PyObject *__pyx_self, i
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_sockfd); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 119, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_sockfd); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 127, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "dtls.pyx":110
+  /* "dtls.pyx":118
  * 
  * 
  * def dtls_bind(int sockfd, int port, str ip="127.0.0.1"):             # <<<<<<<<<<<<<<
@@ -3566,24 +3782,24 @@ static PyObject *__pyx_pf_4dtls_8dtls_bind(CYTHON_UNUSED PyObject *__pyx_self, i
   return __pyx_r;
 }
 
-/* "dtls.pyx":122
+/* "dtls.pyx":130
  * 
  * 
  * def dtls_connect(uintptr_t ssl_ptr, int sockfd, str ip, int port):             # <<<<<<<<<<<<<<
  *     cdef SSL *ssl = <SSL *>ssl_ptr
- *     cdef BIO *bio = BIO_new_dgram(sockfd, 1)
+ * 
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4dtls_11dtls_connect(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_4dtls_13dtls_connect(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_4dtls_11dtls_connect = {"dtls_connect", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_4dtls_11dtls_connect, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_4dtls_11dtls_connect(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_4dtls_13dtls_connect = {"dtls_connect", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_4dtls_13dtls_connect, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_4dtls_13dtls_connect(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -3636,7 +3852,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 122, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 130, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -3644,9 +3860,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 122, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 130, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("dtls_connect", 1, 4, 4, 1); __PYX_ERR(0, 122, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("dtls_connect", 1, 4, 4, 1); __PYX_ERR(0, 130, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -3654,9 +3870,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[2]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 122, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 130, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("dtls_connect", 1, 4, 4, 2); __PYX_ERR(0, 122, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("dtls_connect", 1, 4, 4, 2); __PYX_ERR(0, 130, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
@@ -3664,14 +3880,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[3]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 122, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 130, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("dtls_connect", 1, 4, 4, 3); __PYX_ERR(0, 122, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("dtls_connect", 1, 4, 4, 3); __PYX_ERR(0, 130, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "dtls_connect") < 0)) __PYX_ERR(0, 122, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "dtls_connect") < 0)) __PYX_ERR(0, 130, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 4)) {
       goto __pyx_L5_argtuple_error;
@@ -3681,14 +3897,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       values[2] = __Pyx_Arg_FASTCALL(__pyx_args, 2);
       values[3] = __Pyx_Arg_FASTCALL(__pyx_args, 3);
     }
-    __pyx_v_ssl_ptr = __Pyx_PyInt_As_size_t(values[0]); if (unlikely((__pyx_v_ssl_ptr == ((uintptr_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 122, __pyx_L3_error)
-    __pyx_v_sockfd = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_sockfd == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 122, __pyx_L3_error)
+    __pyx_v_ssl_ptr = __Pyx_PyInt_As_size_t(values[0]); if (unlikely((__pyx_v_ssl_ptr == ((uintptr_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 130, __pyx_L3_error)
+    __pyx_v_sockfd = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_sockfd == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 130, __pyx_L3_error)
     __pyx_v_ip = ((PyObject*)values[2]);
-    __pyx_v_port = __Pyx_PyInt_As_int(values[3]); if (unlikely((__pyx_v_port == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 122, __pyx_L3_error)
+    __pyx_v_port = __Pyx_PyInt_As_int(values[3]); if (unlikely((__pyx_v_port == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 130, __pyx_L3_error)
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("dtls_connect", 1, 4, 4, __pyx_nargs); __PYX_ERR(0, 122, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("dtls_connect", 1, 4, 4, __pyx_nargs); __PYX_ERR(0, 130, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -3702,8 +3918,8 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_ip), (&PyString_Type), 1, "ip", 1))) __PYX_ERR(0, 122, __pyx_L1_error)
-  __pyx_r = __pyx_pf_4dtls_10dtls_connect(__pyx_self, __pyx_v_ssl_ptr, __pyx_v_sockfd, __pyx_v_ip, __pyx_v_port);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_ip), (&PyString_Type), 1, "ip", 1))) __PYX_ERR(0, 130, __pyx_L1_error)
+  __pyx_r = __pyx_pf_4dtls_12dtls_connect(__pyx_self, __pyx_v_ssl_ptr, __pyx_v_sockfd, __pyx_v_ip, __pyx_v_port);
 
   /* function exit code */
   goto __pyx_L0;
@@ -3720,81 +3936,30 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4dtls_10dtls_connect(CYTHON_UNUSED PyObject *__pyx_self, uintptr_t __pyx_v_ssl_ptr, int __pyx_v_sockfd, PyObject *__pyx_v_ip, int __pyx_v_port) {
+static PyObject *__pyx_pf_4dtls_12dtls_connect(CYTHON_UNUSED PyObject *__pyx_self, uintptr_t __pyx_v_ssl_ptr, int __pyx_v_sockfd, PyObject *__pyx_v_ip, int __pyx_v_port) {
   SSL *__pyx_v_ssl;
-  BIO *__pyx_v_bio;
   struct sockaddr_in __pyx_v_server_addr;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
-  int __pyx_t_1;
-  PyObject *__pyx_t_2 = NULL;
-  char const *__pyx_t_3;
+  PyObject *__pyx_t_1 = NULL;
+  char const *__pyx_t_2;
+  int __pyx_t_3;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("dtls_connect", 1);
 
-  /* "dtls.pyx":123
+  /* "dtls.pyx":131
  * 
  * def dtls_connect(uintptr_t ssl_ptr, int sockfd, str ip, int port):
  *     cdef SSL *ssl = <SSL *>ssl_ptr             # <<<<<<<<<<<<<<
- *     cdef BIO *bio = BIO_new_dgram(sockfd, 1)
- *     if bio == NULL:
- */
-  __pyx_v_ssl = ((SSL *)__pyx_v_ssl_ptr);
-
-  /* "dtls.pyx":124
- * def dtls_connect(uintptr_t ssl_ptr, int sockfd, str ip, int port):
- *     cdef SSL *ssl = <SSL *>ssl_ptr
- *     cdef BIO *bio = BIO_new_dgram(sockfd, 1)             # <<<<<<<<<<<<<<
- *     if bio == NULL:
- *         raise MemoryError("Cannot create a BIO DTLS.")
- */
-  __pyx_v_bio = BIO_new_dgram(__pyx_v_sockfd, 1);
-
-  /* "dtls.pyx":125
- *     cdef SSL *ssl = <SSL *>ssl_ptr
- *     cdef BIO *bio = BIO_new_dgram(sockfd, 1)
- *     if bio == NULL:             # <<<<<<<<<<<<<<
- *         raise MemoryError("Cannot create a BIO DTLS.")
- * 
- */
-  __pyx_t_1 = (__pyx_v_bio == NULL);
-  if (unlikely(__pyx_t_1)) {
-
-    /* "dtls.pyx":126
- *     cdef BIO *bio = BIO_new_dgram(sockfd, 1)
- *     if bio == NULL:
- *         raise MemoryError("Cannot create a BIO DTLS.")             # <<<<<<<<<<<<<<
- * 
- *     SSL_set_bio(ssl, bio, bio)
- */
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_MemoryError, __pyx_tuple__5, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 126, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_2);
-    __Pyx_Raise(__pyx_t_2, 0, 0, 0);
-    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(0, 126, __pyx_L1_error)
-
-    /* "dtls.pyx":125
- *     cdef SSL *ssl = <SSL *>ssl_ptr
- *     cdef BIO *bio = BIO_new_dgram(sockfd, 1)
- *     if bio == NULL:             # <<<<<<<<<<<<<<
- *         raise MemoryError("Cannot create a BIO DTLS.")
- * 
- */
-  }
-
-  /* "dtls.pyx":128
- *         raise MemoryError("Cannot create a BIO DTLS.")
- * 
- *     SSL_set_bio(ssl, bio, bio)             # <<<<<<<<<<<<<<
  * 
  *     SSL_set_options(ssl, SSL_OP_NO_TICKET)
  */
-  SSL_set_bio(__pyx_v_ssl, __pyx_v_bio, __pyx_v_bio);
+  __pyx_v_ssl = ((SSL *)__pyx_v_ssl_ptr);
 
-  /* "dtls.pyx":130
- *     SSL_set_bio(ssl, bio, bio)
+  /* "dtls.pyx":133
+ *     cdef SSL *ssl = <SSL *>ssl_ptr
  * 
  *     SSL_set_options(ssl, SSL_OP_NO_TICKET)             # <<<<<<<<<<<<<<
  *     cdef sockaddr_in server_addr
@@ -3802,7 +3967,7 @@ static PyObject *__pyx_pf_4dtls_10dtls_connect(CYTHON_UNUSED PyObject *__pyx_sel
  */
   (void)(SSL_set_options(__pyx_v_ssl, SSL_OP_NO_TICKET));
 
-  /* "dtls.pyx":132
+  /* "dtls.pyx":135
  *     SSL_set_options(ssl, SSL_OP_NO_TICKET)
  *     cdef sockaddr_in server_addr
  *     memset(&server_addr, 0, sizeof(server_addr))             # <<<<<<<<<<<<<<
@@ -3811,7 +3976,7 @@ static PyObject *__pyx_pf_4dtls_10dtls_connect(CYTHON_UNUSED PyObject *__pyx_sel
  */
   (void)(memset((&__pyx_v_server_addr), 0, (sizeof(__pyx_v_server_addr))));
 
-  /* "dtls.pyx":133
+  /* "dtls.pyx":136
  *     cdef sockaddr_in server_addr
  *     memset(&server_addr, 0, sizeof(server_addr))
  *     server_addr.sin_family = AF_INET             # <<<<<<<<<<<<<<
@@ -3820,7 +3985,7 @@ static PyObject *__pyx_pf_4dtls_10dtls_connect(CYTHON_UNUSED PyObject *__pyx_sel
  */
   __pyx_v_server_addr.sin_family = AF_INET;
 
-  /* "dtls.pyx":134
+  /* "dtls.pyx":137
  *     memset(&server_addr, 0, sizeof(server_addr))
  *     server_addr.sin_family = AF_INET
  *     server_addr.sin_port = htons(port)             # <<<<<<<<<<<<<<
@@ -3829,43 +3994,43 @@ static PyObject *__pyx_pf_4dtls_10dtls_connect(CYTHON_UNUSED PyObject *__pyx_sel
  */
   __pyx_v_server_addr.sin_port = htons(__pyx_v_port);
 
-  /* "dtls.pyx":135
+  /* "dtls.pyx":138
  *     server_addr.sin_family = AF_INET
  *     server_addr.sin_port = htons(port)
  *     server_addr.sin_addr.s_addr = inet_addr(ip.encode())             # <<<<<<<<<<<<<<
  * 
  *     if connect(sockfd, <const sockaddr *>&server_addr, sizeof(server_addr)) < 0:
  */
-  __pyx_t_2 = __Pyx_CallUnboundCMethod0(&__pyx_umethod_PyString_Type_encode, __pyx_v_ip); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 135, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_AsString(__pyx_t_2); if (unlikely((!__pyx_t_3) && PyErr_Occurred())) __PYX_ERR(0, 135, __pyx_L1_error)
-  __pyx_v_server_addr.sin_addr.s_addr = inet_addr(__pyx_t_3);
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_1 = __Pyx_CallUnboundCMethod0(&__pyx_umethod_PyString_Type_encode, __pyx_v_ip); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 138, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = __Pyx_PyObject_AsString(__pyx_t_1); if (unlikely((!__pyx_t_2) && PyErr_Occurred())) __PYX_ERR(0, 138, __pyx_L1_error)
+  __pyx_v_server_addr.sin_addr.s_addr = inet_addr(__pyx_t_2);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "dtls.pyx":137
+  /* "dtls.pyx":140
  *     server_addr.sin_addr.s_addr = inet_addr(ip.encode())
  * 
  *     if connect(sockfd, <const sockaddr *>&server_addr, sizeof(server_addr)) < 0:             # <<<<<<<<<<<<<<
  *         raise OSError("Cannot connect to the UDP socket.")
  * 
  */
-  __pyx_t_1 = (connect(__pyx_v_sockfd, ((struct sockaddr const *)(&__pyx_v_server_addr)), (sizeof(__pyx_v_server_addr))) < 0);
-  if (unlikely(__pyx_t_1)) {
+  __pyx_t_3 = (connect(__pyx_v_sockfd, ((struct sockaddr const *)(&__pyx_v_server_addr)), (sizeof(__pyx_v_server_addr))) < 0);
+  if (unlikely(__pyx_t_3)) {
 
-    /* "dtls.pyx":138
+    /* "dtls.pyx":141
  * 
  *     if connect(sockfd, <const sockaddr *>&server_addr, sizeof(server_addr)) < 0:
  *         raise OSError("Cannot connect to the UDP socket.")             # <<<<<<<<<<<<<<
  * 
- *     BIO_ctrl(bio, BIO_CTRL_DGRAM_CONNECT, 0, &server_addr)
+ *     # BIO_ctrl(bio, BIO_CTRL_DGRAM_CONNECT, 0, &server_addr)
  */
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_OSError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 138, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_2);
-    __Pyx_Raise(__pyx_t_2, 0, 0, 0);
-    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(0, 138, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_OSError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 141, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_Raise(__pyx_t_1, 0, 0, 0);
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+    __PYX_ERR(0, 141, __pyx_L1_error)
 
-    /* "dtls.pyx":137
+    /* "dtls.pyx":140
  *     server_addr.sin_addr.s_addr = inet_addr(ip.encode())
  * 
  *     if connect(sockfd, <const sockaddr *>&server_addr, sizeof(server_addr)) < 0:             # <<<<<<<<<<<<<<
@@ -3874,28 +4039,19 @@ static PyObject *__pyx_pf_4dtls_10dtls_connect(CYTHON_UNUSED PyObject *__pyx_sel
  */
   }
 
-  /* "dtls.pyx":140
- *         raise OSError("Cannot connect to the UDP socket.")
- * 
- *     BIO_ctrl(bio, BIO_CTRL_DGRAM_CONNECT, 0, &server_addr)             # <<<<<<<<<<<<<<
- * 
- * 
- */
-  (void)(BIO_ctrl(__pyx_v_bio, BIO_CTRL_DGRAM_CONNECT, 0, (&__pyx_v_server_addr)));
-
-  /* "dtls.pyx":122
+  /* "dtls.pyx":130
  * 
  * 
  * def dtls_connect(uintptr_t ssl_ptr, int sockfd, str ip, int port):             # <<<<<<<<<<<<<<
  *     cdef SSL *ssl = <SSL *>ssl_ptr
- *     cdef BIO *bio = BIO_new_dgram(sockfd, 1)
+ * 
  */
 
   /* function exit code */
   __pyx_r = Py_None; __Pyx_INCREF(Py_None);
   goto __pyx_L0;
   __pyx_L1_error:;
-  __Pyx_XDECREF(__pyx_t_2);
+  __Pyx_XDECREF(__pyx_t_1);
   __Pyx_AddTraceback("dtls.dtls_connect", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
@@ -3904,7 +4060,7 @@ static PyObject *__pyx_pf_4dtls_10dtls_connect(CYTHON_UNUSED PyObject *__pyx_sel
   return __pyx_r;
 }
 
-/* "dtls.pyx":143
+/* "dtls.pyx":146
  * 
  * 
  * def attach_socket_to_ssl(uintptr_t ssl_ptr, int sockfd):             # <<<<<<<<<<<<<<
@@ -3913,15 +4069,15 @@ static PyObject *__pyx_pf_4dtls_10dtls_connect(CYTHON_UNUSED PyObject *__pyx_sel
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4dtls_13attach_socket_to_ssl(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_4dtls_15attach_socket_to_ssl(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_4dtls_13attach_socket_to_ssl = {"attach_socket_to_ssl", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_4dtls_13attach_socket_to_ssl, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_4dtls_13attach_socket_to_ssl(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_4dtls_15attach_socket_to_ssl = {"attach_socket_to_ssl", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_4dtls_15attach_socket_to_ssl, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_4dtls_15attach_socket_to_ssl(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -3968,7 +4124,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 143, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 146, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -3976,14 +4132,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 143, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 146, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("attach_socket_to_ssl", 1, 2, 2, 1); __PYX_ERR(0, 143, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("attach_socket_to_ssl", 1, 2, 2, 1); __PYX_ERR(0, 146, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "attach_socket_to_ssl") < 0)) __PYX_ERR(0, 143, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "attach_socket_to_ssl") < 0)) __PYX_ERR(0, 146, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 2)) {
       goto __pyx_L5_argtuple_error;
@@ -3991,12 +4147,12 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       values[0] = __Pyx_Arg_FASTCALL(__pyx_args, 0);
       values[1] = __Pyx_Arg_FASTCALL(__pyx_args, 1);
     }
-    __pyx_v_ssl_ptr = __Pyx_PyInt_As_size_t(values[0]); if (unlikely((__pyx_v_ssl_ptr == ((uintptr_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 143, __pyx_L3_error)
-    __pyx_v_sockfd = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_sockfd == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 143, __pyx_L3_error)
+    __pyx_v_ssl_ptr = __Pyx_PyInt_As_size_t(values[0]); if (unlikely((__pyx_v_ssl_ptr == ((uintptr_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 146, __pyx_L3_error)
+    __pyx_v_sockfd = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_sockfd == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 146, __pyx_L3_error)
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("attach_socket_to_ssl", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 143, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("attach_socket_to_ssl", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 146, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -4010,7 +4166,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_4dtls_12attach_socket_to_ssl(__pyx_self, __pyx_v_ssl_ptr, __pyx_v_sockfd);
+  __pyx_r = __pyx_pf_4dtls_14attach_socket_to_ssl(__pyx_self, __pyx_v_ssl_ptr, __pyx_v_sockfd);
 
   /* function exit code */
   {
@@ -4023,7 +4179,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4dtls_12attach_socket_to_ssl(CYTHON_UNUSED PyObject *__pyx_self, uintptr_t __pyx_v_ssl_ptr, int __pyx_v_sockfd) {
+static PyObject *__pyx_pf_4dtls_14attach_socket_to_ssl(CYTHON_UNUSED PyObject *__pyx_self, uintptr_t __pyx_v_ssl_ptr, int __pyx_v_sockfd) {
   SSL *__pyx_v_ssl;
   BIO *__pyx_v_bio;
   PyObject *__pyx_r = NULL;
@@ -4035,7 +4191,7 @@ static PyObject *__pyx_pf_4dtls_12attach_socket_to_ssl(CYTHON_UNUSED PyObject *_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("attach_socket_to_ssl", 1);
 
-  /* "dtls.pyx":144
+  /* "dtls.pyx":147
  * 
  * def attach_socket_to_ssl(uintptr_t ssl_ptr, int sockfd):
  *     cdef SSL *ssl = <SSL *>ssl_ptr             # <<<<<<<<<<<<<<
@@ -4044,7 +4200,7 @@ static PyObject *__pyx_pf_4dtls_12attach_socket_to_ssl(CYTHON_UNUSED PyObject *_
  */
   __pyx_v_ssl = ((SSL *)__pyx_v_ssl_ptr);
 
-  /* "dtls.pyx":145
+  /* "dtls.pyx":148
  * def attach_socket_to_ssl(uintptr_t ssl_ptr, int sockfd):
  *     cdef SSL *ssl = <SSL *>ssl_ptr
  *     cdef BIO *bio = BIO_new_dgram(sockfd, 1)             # <<<<<<<<<<<<<<
@@ -4053,7 +4209,7 @@ static PyObject *__pyx_pf_4dtls_12attach_socket_to_ssl(CYTHON_UNUSED PyObject *_
  */
   __pyx_v_bio = BIO_new_dgram(__pyx_v_sockfd, 1);
 
-  /* "dtls.pyx":146
+  /* "dtls.pyx":149
  *     cdef SSL *ssl = <SSL *>ssl_ptr
  *     cdef BIO *bio = BIO_new_dgram(sockfd, 1)
  *     if bio == NULL:             # <<<<<<<<<<<<<<
@@ -4063,20 +4219,20 @@ static PyObject *__pyx_pf_4dtls_12attach_socket_to_ssl(CYTHON_UNUSED PyObject *_
   __pyx_t_1 = (__pyx_v_bio == NULL);
   if (unlikely(__pyx_t_1)) {
 
-    /* "dtls.pyx":147
+    /* "dtls.pyx":150
  *     cdef BIO *bio = BIO_new_dgram(sockfd, 1)
  *     if bio == NULL:
  *         raise MemoryError("Cannot create a BIO DTLS.")             # <<<<<<<<<<<<<<
  * 
  *     SSL_set_bio(ssl, bio, bio)
  */
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_MemoryError, __pyx_tuple__5, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 147, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_MemoryError, __pyx_tuple__4, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 150, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(0, 147, __pyx_L1_error)
+    __PYX_ERR(0, 150, __pyx_L1_error)
 
-    /* "dtls.pyx":146
+    /* "dtls.pyx":149
  *     cdef SSL *ssl = <SSL *>ssl_ptr
  *     cdef BIO *bio = BIO_new_dgram(sockfd, 1)
  *     if bio == NULL:             # <<<<<<<<<<<<<<
@@ -4085,7 +4241,7 @@ static PyObject *__pyx_pf_4dtls_12attach_socket_to_ssl(CYTHON_UNUSED PyObject *_
  */
   }
 
-  /* "dtls.pyx":149
+  /* "dtls.pyx":152
  *         raise MemoryError("Cannot create a BIO DTLS.")
  * 
  *     SSL_set_bio(ssl, bio, bio)             # <<<<<<<<<<<<<<
@@ -4094,7 +4250,7 @@ static PyObject *__pyx_pf_4dtls_12attach_socket_to_ssl(CYTHON_UNUSED PyObject *_
  */
   SSL_set_bio(__pyx_v_ssl, __pyx_v_bio, __pyx_v_bio);
 
-  /* "dtls.pyx":143
+  /* "dtls.pyx":146
  * 
  * 
  * def attach_socket_to_ssl(uintptr_t ssl_ptr, int sockfd):             # <<<<<<<<<<<<<<
@@ -4115,7 +4271,7 @@ static PyObject *__pyx_pf_4dtls_12attach_socket_to_ssl(CYTHON_UNUSED PyObject *_
   return __pyx_r;
 }
 
-/* "dtls.pyx":152
+/* "dtls.pyx":155
  * 
  * 
  * def dtls_accept(uintptr_t ssl_ptr):             # <<<<<<<<<<<<<<
@@ -4124,15 +4280,15 @@ static PyObject *__pyx_pf_4dtls_12attach_socket_to_ssl(CYTHON_UNUSED PyObject *_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4dtls_15dtls_accept(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_4dtls_17dtls_accept(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_4dtls_15dtls_accept = {"dtls_accept", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_4dtls_15dtls_accept, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_4dtls_15dtls_accept(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_4dtls_17dtls_accept = {"dtls_accept", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_4dtls_17dtls_accept, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_4dtls_17dtls_accept(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -4176,23 +4332,23 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 152, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 155, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "dtls_accept") < 0)) __PYX_ERR(0, 152, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "dtls_accept") < 0)) __PYX_ERR(0, 155, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 1)) {
       goto __pyx_L5_argtuple_error;
     } else {
       values[0] = __Pyx_Arg_FASTCALL(__pyx_args, 0);
     }
-    __pyx_v_ssl_ptr = __Pyx_PyInt_As_size_t(values[0]); if (unlikely((__pyx_v_ssl_ptr == ((uintptr_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 152, __pyx_L3_error)
+    __pyx_v_ssl_ptr = __Pyx_PyInt_As_size_t(values[0]); if (unlikely((__pyx_v_ssl_ptr == ((uintptr_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 155, __pyx_L3_error)
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("dtls_accept", 1, 1, 1, __pyx_nargs); __PYX_ERR(0, 152, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("dtls_accept", 1, 1, 1, __pyx_nargs); __PYX_ERR(0, 155, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -4206,7 +4362,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_4dtls_14dtls_accept(__pyx_self, __pyx_v_ssl_ptr);
+  __pyx_r = __pyx_pf_4dtls_16dtls_accept(__pyx_self, __pyx_v_ssl_ptr);
 
   /* function exit code */
   {
@@ -4219,7 +4375,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4dtls_14dtls_accept(CYTHON_UNUSED PyObject *__pyx_self, uintptr_t __pyx_v_ssl_ptr) {
+static PyObject *__pyx_pf_4dtls_16dtls_accept(CYTHON_UNUSED PyObject *__pyx_self, uintptr_t __pyx_v_ssl_ptr) {
   SSL *__pyx_v_ssl;
   int __pyx_v_result;
   int __pyx_v_err_code;
@@ -4235,7 +4391,7 @@ static PyObject *__pyx_pf_4dtls_14dtls_accept(CYTHON_UNUSED PyObject *__pyx_self
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("dtls_accept", 1);
 
-  /* "dtls.pyx":153
+  /* "dtls.pyx":156
  * 
  * def dtls_accept(uintptr_t ssl_ptr):
  *     cdef SSL *ssl = <SSL *>ssl_ptr             # <<<<<<<<<<<<<<
@@ -4244,7 +4400,7 @@ static PyObject *__pyx_pf_4dtls_14dtls_accept(CYTHON_UNUSED PyObject *__pyx_self
  */
   __pyx_v_ssl = ((SSL *)__pyx_v_ssl_ptr);
 
-  /* "dtls.pyx":157
+  /* "dtls.pyx":160
  *     cdef int err_code
  *     cdef char err_buf[256]
  *     result = SSL_accept(ssl)             # <<<<<<<<<<<<<<
@@ -4253,7 +4409,7 @@ static PyObject *__pyx_pf_4dtls_14dtls_accept(CYTHON_UNUSED PyObject *__pyx_self
  */
   __pyx_v_result = SSL_accept(__pyx_v_ssl);
 
-  /* "dtls.pyx":158
+  /* "dtls.pyx":161
  *     cdef char err_buf[256]
  *     result = SSL_accept(ssl)
  *     if result != 1:             # <<<<<<<<<<<<<<
@@ -4263,7 +4419,7 @@ static PyObject *__pyx_pf_4dtls_14dtls_accept(CYTHON_UNUSED PyObject *__pyx_self
   __pyx_t_1 = (__pyx_v_result != 1);
   if (unlikely(__pyx_t_1)) {
 
-    /* "dtls.pyx":159
+    /* "dtls.pyx":162
  *     result = SSL_accept(ssl)
  *     if result != 1:
  *         err_code = ERR_get_error()             # <<<<<<<<<<<<<<
@@ -4272,7 +4428,7 @@ static PyObject *__pyx_pf_4dtls_14dtls_accept(CYTHON_UNUSED PyObject *__pyx_self
  */
     __pyx_v_err_code = ERR_get_error();
 
-    /* "dtls.pyx":160
+    /* "dtls.pyx":163
  *     if result != 1:
  *         err_code = ERR_get_error()
  *         ERR_error_string(err_code, err_buf)             # <<<<<<<<<<<<<<
@@ -4281,27 +4437,27 @@ static PyObject *__pyx_pf_4dtls_14dtls_accept(CYTHON_UNUSED PyObject *__pyx_self
  */
     (void)(ERR_error_string(__pyx_v_err_code, __pyx_v_err_buf));
 
-    /* "dtls.pyx":161
+    /* "dtls.pyx":164
  *         err_code = ERR_get_error()
  *         ERR_error_string(err_code, err_buf)
  *         raise OSError(f"SSL_accept failed: {err_buf.decode('utf-8')}")             # <<<<<<<<<<<<<<
  *     return result
  * 
  */
-    __pyx_t_2 = __Pyx_ssize_strlen(__pyx_v_err_buf); if (unlikely(__pyx_t_2 == ((Py_ssize_t)-1))) __PYX_ERR(0, 161, __pyx_L1_error)
-    __pyx_t_3 = __Pyx_decode_c_string(__pyx_v_err_buf, 0, __pyx_t_2, NULL, NULL, PyUnicode_DecodeUTF8); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 161, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_ssize_strlen(__pyx_v_err_buf); if (unlikely(__pyx_t_2 == ((Py_ssize_t)-1))) __PYX_ERR(0, 164, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_decode_c_string(__pyx_v_err_buf, 0, __pyx_t_2, NULL, NULL, PyUnicode_DecodeUTF8); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 164, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyUnicode_Concat(__pyx_kp_u_SSL_accept_failed, __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 161, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyUnicode_Concat(__pyx_kp_u_SSL_accept_failed, __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 164, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_builtin_OSError, __pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 161, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_builtin_OSError, __pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 164, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __PYX_ERR(0, 161, __pyx_L1_error)
+    __PYX_ERR(0, 164, __pyx_L1_error)
 
-    /* "dtls.pyx":158
+    /* "dtls.pyx":161
  *     cdef char err_buf[256]
  *     result = SSL_accept(ssl)
  *     if result != 1:             # <<<<<<<<<<<<<<
@@ -4310,7 +4466,7 @@ static PyObject *__pyx_pf_4dtls_14dtls_accept(CYTHON_UNUSED PyObject *__pyx_self
  */
   }
 
-  /* "dtls.pyx":162
+  /* "dtls.pyx":165
  *         ERR_error_string(err_code, err_buf)
  *         raise OSError(f"SSL_accept failed: {err_buf.decode('utf-8')}")
  *     return result             # <<<<<<<<<<<<<<
@@ -4318,13 +4474,13 @@ static PyObject *__pyx_pf_4dtls_14dtls_accept(CYTHON_UNUSED PyObject *__pyx_self
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_result); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 162, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_result); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 165, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_r = __pyx_t_3;
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "dtls.pyx":152
+  /* "dtls.pyx":155
  * 
  * 
  * def dtls_accept(uintptr_t ssl_ptr):             # <<<<<<<<<<<<<<
@@ -4344,7 +4500,7 @@ static PyObject *__pyx_pf_4dtls_14dtls_accept(CYTHON_UNUSED PyObject *__pyx_self
   return __pyx_r;
 }
 
-/* "dtls.pyx":165
+/* "dtls.pyx":168
  * 
  * 
  * def dtls_handshake(uintptr_t ssl_ptr, bint is_server=False):             # <<<<<<<<<<<<<<
@@ -4353,15 +4509,15 @@ static PyObject *__pyx_pf_4dtls_14dtls_accept(CYTHON_UNUSED PyObject *__pyx_self
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4dtls_17dtls_handshake(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_4dtls_19dtls_handshake(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_4dtls_17dtls_handshake = {"dtls_handshake", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_4dtls_17dtls_handshake, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_4dtls_17dtls_handshake(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_4dtls_19dtls_handshake = {"dtls_handshake", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_4dtls_19dtls_handshake, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_4dtls_19dtls_handshake(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -4408,19 +4564,19 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 165, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 168, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
         if (kw_args > 0) {
           PyObject* value = __Pyx_GetKwValue_FASTCALL(__pyx_kwds, __pyx_kwvalues, __pyx_n_s_is_server);
           if (value) { values[1] = __Pyx_Arg_NewRef_FASTCALL(value); kw_args--; }
-          else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 165, __pyx_L3_error)
+          else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 168, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "dtls_handshake") < 0)) __PYX_ERR(0, 165, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "dtls_handshake") < 0)) __PYX_ERR(0, 168, __pyx_L3_error)
       }
     } else {
       switch (__pyx_nargs) {
@@ -4431,16 +4587,16 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
         default: goto __pyx_L5_argtuple_error;
       }
     }
-    __pyx_v_ssl_ptr = __Pyx_PyInt_As_size_t(values[0]); if (unlikely((__pyx_v_ssl_ptr == ((uintptr_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 165, __pyx_L3_error)
+    __pyx_v_ssl_ptr = __Pyx_PyInt_As_size_t(values[0]); if (unlikely((__pyx_v_ssl_ptr == ((uintptr_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 168, __pyx_L3_error)
     if (values[1]) {
-      __pyx_v_is_server = __Pyx_PyObject_IsTrue(values[1]); if (unlikely((__pyx_v_is_server == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 165, __pyx_L3_error)
+      __pyx_v_is_server = __Pyx_PyObject_IsTrue(values[1]); if (unlikely((__pyx_v_is_server == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 168, __pyx_L3_error)
     } else {
       __pyx_v_is_server = ((int)((int)0));
     }
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("dtls_handshake", 0, 1, 2, __pyx_nargs); __PYX_ERR(0, 165, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("dtls_handshake", 0, 1, 2, __pyx_nargs); __PYX_ERR(0, 168, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -4454,7 +4610,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_4dtls_16dtls_handshake(__pyx_self, __pyx_v_ssl_ptr, __pyx_v_is_server);
+  __pyx_r = __pyx_pf_4dtls_18dtls_handshake(__pyx_self, __pyx_v_ssl_ptr, __pyx_v_is_server);
 
   /* function exit code */
   {
@@ -4467,7 +4623,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4dtls_16dtls_handshake(CYTHON_UNUSED PyObject *__pyx_self, uintptr_t __pyx_v_ssl_ptr, int __pyx_v_is_server) {
+static PyObject *__pyx_pf_4dtls_18dtls_handshake(CYTHON_UNUSED PyObject *__pyx_self, uintptr_t __pyx_v_ssl_ptr, int __pyx_v_is_server) {
   SSL *__pyx_v_ssl;
   int __pyx_v_result;
   PyObject *__pyx_r = NULL;
@@ -4479,7 +4635,7 @@ static PyObject *__pyx_pf_4dtls_16dtls_handshake(CYTHON_UNUSED PyObject *__pyx_s
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("dtls_handshake", 1);
 
-  /* "dtls.pyx":166
+  /* "dtls.pyx":169
  * 
  * def dtls_handshake(uintptr_t ssl_ptr, bint is_server=False):
  *     cdef SSL *ssl = <SSL *>ssl_ptr             # <<<<<<<<<<<<<<
@@ -4488,7 +4644,7 @@ static PyObject *__pyx_pf_4dtls_16dtls_handshake(CYTHON_UNUSED PyObject *__pyx_s
  */
   __pyx_v_ssl = ((SSL *)__pyx_v_ssl_ptr);
 
-  /* "dtls.pyx":169
+  /* "dtls.pyx":172
  *     cdef int result
  * 
  *     if is_server:             # <<<<<<<<<<<<<<
@@ -4497,18 +4653,18 @@ static PyObject *__pyx_pf_4dtls_16dtls_handshake(CYTHON_UNUSED PyObject *__pyx_s
  */
   if (__pyx_v_is_server) {
 
-    /* "dtls.pyx":170
+    /* "dtls.pyx":173
  * 
  *     if is_server:
  *         print("[DEBUG] Mode serveur")             # <<<<<<<<<<<<<<
  *         result = SSL_accept(ssl)
  *     else:
  */
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_tuple__7, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 170, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_tuple__7, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 173, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "dtls.pyx":171
+    /* "dtls.pyx":174
  *     if is_server:
  *         print("[DEBUG] Mode serveur")
  *         result = SSL_accept(ssl)             # <<<<<<<<<<<<<<
@@ -4517,7 +4673,7 @@ static PyObject *__pyx_pf_4dtls_16dtls_handshake(CYTHON_UNUSED PyObject *__pyx_s
  */
     __pyx_v_result = SSL_accept(__pyx_v_ssl);
 
-    /* "dtls.pyx":169
+    /* "dtls.pyx":172
  *     cdef int result
  * 
  *     if is_server:             # <<<<<<<<<<<<<<
@@ -4527,7 +4683,7 @@ static PyObject *__pyx_pf_4dtls_16dtls_handshake(CYTHON_UNUSED PyObject *__pyx_s
     goto __pyx_L3;
   }
 
-  /* "dtls.pyx":173
+  /* "dtls.pyx":176
  *         result = SSL_accept(ssl)
  *     else:
  *         print("[DEBUG] Mode client")             # <<<<<<<<<<<<<<
@@ -4535,11 +4691,11 @@ static PyObject *__pyx_pf_4dtls_16dtls_handshake(CYTHON_UNUSED PyObject *__pyx_s
  * 
  */
   /*else*/ {
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_tuple__8, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 173, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_tuple__8, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 176, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "dtls.pyx":174
+    /* "dtls.pyx":177
  *     else:
  *         print("[DEBUG] Mode client")
  *         result = SSL_connect(ssl)             # <<<<<<<<<<<<<<
@@ -4550,7 +4706,7 @@ static PyObject *__pyx_pf_4dtls_16dtls_handshake(CYTHON_UNUSED PyObject *__pyx_s
   }
   __pyx_L3:;
 
-  /* "dtls.pyx":176
+  /* "dtls.pyx":179
  *         result = SSL_connect(ssl)
  * 
  *     if result != 1:             # <<<<<<<<<<<<<<
@@ -4560,31 +4716,31 @@ static PyObject *__pyx_pf_4dtls_16dtls_handshake(CYTHON_UNUSED PyObject *__pyx_s
   __pyx_t_2 = (__pyx_v_result != 1);
   if (unlikely(__pyx_t_2)) {
 
-    /* "dtls.pyx":177
+    /* "dtls.pyx":180
  * 
  *     if result != 1:
  *         print("[DEBUG] Erreur dans SSL_connect/SSL_accept")             # <<<<<<<<<<<<<<
  *         raise OSError("DTLS handshake failed.")
  *     print("[DEBUG] Handshake russi !")
  */
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_tuple__9, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 177, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_tuple__9, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 180, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "dtls.pyx":178
+    /* "dtls.pyx":181
  *     if result != 1:
  *         print("[DEBUG] Erreur dans SSL_connect/SSL_accept")
  *         raise OSError("DTLS handshake failed.")             # <<<<<<<<<<<<<<
  *     print("[DEBUG] Handshake russi !")
  * 
  */
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_OSError, __pyx_tuple__10, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 178, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_OSError, __pyx_tuple__10, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 181, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 178, __pyx_L1_error)
+    __PYX_ERR(0, 181, __pyx_L1_error)
 
-    /* "dtls.pyx":176
+    /* "dtls.pyx":179
  *         result = SSL_connect(ssl)
  * 
  *     if result != 1:             # <<<<<<<<<<<<<<
@@ -4593,18 +4749,18 @@ static PyObject *__pyx_pf_4dtls_16dtls_handshake(CYTHON_UNUSED PyObject *__pyx_s
  */
   }
 
-  /* "dtls.pyx":179
+  /* "dtls.pyx":182
  *         print("[DEBUG] Erreur dans SSL_connect/SSL_accept")
  *         raise OSError("DTLS handshake failed.")
  *     print("[DEBUG] Handshake russi !")             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_tuple__11, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 179, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_tuple__11, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 182, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "dtls.pyx":165
+  /* "dtls.pyx":168
  * 
  * 
  * def dtls_handshake(uintptr_t ssl_ptr, bint is_server=False):             # <<<<<<<<<<<<<<
@@ -4625,7 +4781,7 @@ static PyObject *__pyx_pf_4dtls_16dtls_handshake(CYTHON_UNUSED PyObject *__pyx_s
   return __pyx_r;
 }
 
-/* "dtls.pyx":182
+/* "dtls.pyx":185
  * 
  * 
  * def dtls_send(uintptr_t ssl_ptr, bytes data):             # <<<<<<<<<<<<<<
@@ -4634,15 +4790,15 @@ static PyObject *__pyx_pf_4dtls_16dtls_handshake(CYTHON_UNUSED PyObject *__pyx_s
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4dtls_19dtls_send(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_4dtls_21dtls_send(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_4dtls_19dtls_send = {"dtls_send", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_4dtls_19dtls_send, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_4dtls_19dtls_send(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_4dtls_21dtls_send = {"dtls_send", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_4dtls_21dtls_send, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_4dtls_21dtls_send(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -4689,7 +4845,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 182, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 185, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -4697,14 +4853,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 182, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 185, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("dtls_send", 1, 2, 2, 1); __PYX_ERR(0, 182, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("dtls_send", 1, 2, 2, 1); __PYX_ERR(0, 185, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "dtls_send") < 0)) __PYX_ERR(0, 182, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "dtls_send") < 0)) __PYX_ERR(0, 185, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 2)) {
       goto __pyx_L5_argtuple_error;
@@ -4712,12 +4868,12 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       values[0] = __Pyx_Arg_FASTCALL(__pyx_args, 0);
       values[1] = __Pyx_Arg_FASTCALL(__pyx_args, 1);
     }
-    __pyx_v_ssl_ptr = __Pyx_PyInt_As_size_t(values[0]); if (unlikely((__pyx_v_ssl_ptr == ((uintptr_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 182, __pyx_L3_error)
+    __pyx_v_ssl_ptr = __Pyx_PyInt_As_size_t(values[0]); if (unlikely((__pyx_v_ssl_ptr == ((uintptr_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 185, __pyx_L3_error)
     __pyx_v_data = ((PyObject*)values[1]);
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("dtls_send", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 182, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("dtls_send", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 185, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -4731,8 +4887,8 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_data), (&PyBytes_Type), 1, "data", 1))) __PYX_ERR(0, 182, __pyx_L1_error)
-  __pyx_r = __pyx_pf_4dtls_18dtls_send(__pyx_self, __pyx_v_ssl_ptr, __pyx_v_data);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_data), (&PyBytes_Type), 1, "data", 1))) __PYX_ERR(0, 185, __pyx_L1_error)
+  __pyx_r = __pyx_pf_4dtls_20dtls_send(__pyx_self, __pyx_v_ssl_ptr, __pyx_v_data);
 
   /* function exit code */
   goto __pyx_L0;
@@ -4749,7 +4905,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4dtls_18dtls_send(CYTHON_UNUSED PyObject *__pyx_self, uintptr_t __pyx_v_ssl_ptr, PyObject *__pyx_v_data) {
+static PyObject *__pyx_pf_4dtls_20dtls_send(CYTHON_UNUSED PyObject *__pyx_self, uintptr_t __pyx_v_ssl_ptr, PyObject *__pyx_v_data) {
   SSL *__pyx_v_ssl;
   int __pyx_v_sent_bytes;
   PyObject *__pyx_r = NULL;
@@ -4763,7 +4919,7 @@ static PyObject *__pyx_pf_4dtls_18dtls_send(CYTHON_UNUSED PyObject *__pyx_self, 
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("dtls_send", 1);
 
-  /* "dtls.pyx":183
+  /* "dtls.pyx":186
  * 
  * def dtls_send(uintptr_t ssl_ptr, bytes data):
  *     cdef SSL *ssl = <SSL *>ssl_ptr             # <<<<<<<<<<<<<<
@@ -4772,7 +4928,7 @@ static PyObject *__pyx_pf_4dtls_18dtls_send(CYTHON_UNUSED PyObject *__pyx_self, 
  */
   __pyx_v_ssl = ((SSL *)__pyx_v_ssl_ptr);
 
-  /* "dtls.pyx":184
+  /* "dtls.pyx":187
  * def dtls_send(uintptr_t ssl_ptr, bytes data):
  *     cdef SSL *ssl = <SSL *>ssl_ptr
  *     cdef int sent_bytes = SSL_write(ssl, data, len(data))             # <<<<<<<<<<<<<<
@@ -4781,17 +4937,17 @@ static PyObject *__pyx_pf_4dtls_18dtls_send(CYTHON_UNUSED PyObject *__pyx_self, 
  */
   if (unlikely(__pyx_v_data == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "expected bytes, NoneType found");
-    __PYX_ERR(0, 184, __pyx_L1_error)
+    __PYX_ERR(0, 187, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_PyBytes_AsWritableString(__pyx_v_data); if (unlikely((!__pyx_t_1) && PyErr_Occurred())) __PYX_ERR(0, 184, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyBytes_AsWritableString(__pyx_v_data); if (unlikely((!__pyx_t_1) && PyErr_Occurred())) __PYX_ERR(0, 187, __pyx_L1_error)
   if (unlikely(__pyx_v_data == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "object of type 'NoneType' has no len()");
-    __PYX_ERR(0, 184, __pyx_L1_error)
+    __PYX_ERR(0, 187, __pyx_L1_error)
   }
-  __pyx_t_2 = __Pyx_PyBytes_GET_SIZE(__pyx_v_data); if (unlikely(__pyx_t_2 == ((Py_ssize_t)-1))) __PYX_ERR(0, 184, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyBytes_GET_SIZE(__pyx_v_data); if (unlikely(__pyx_t_2 == ((Py_ssize_t)-1))) __PYX_ERR(0, 187, __pyx_L1_error)
   __pyx_v_sent_bytes = SSL_write(__pyx_v_ssl, __pyx_t_1, __pyx_t_2);
 
-  /* "dtls.pyx":185
+  /* "dtls.pyx":188
  *     cdef SSL *ssl = <SSL *>ssl_ptr
  *     cdef int sent_bytes = SSL_write(ssl, data, len(data))
  *     if sent_bytes <= 0:             # <<<<<<<<<<<<<<
@@ -4801,20 +4957,20 @@ static PyObject *__pyx_pf_4dtls_18dtls_send(CYTHON_UNUSED PyObject *__pyx_self, 
   __pyx_t_3 = (__pyx_v_sent_bytes <= 0);
   if (unlikely(__pyx_t_3)) {
 
-    /* "dtls.pyx":186
+    /* "dtls.pyx":189
  *     cdef int sent_bytes = SSL_write(ssl, data, len(data))
  *     if sent_bytes <= 0:
  *         raise OSError("Failed to send DTLS data.")             # <<<<<<<<<<<<<<
  *     return sent_bytes
  * 
  */
-    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_OSError, __pyx_tuple__12, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 186, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_OSError, __pyx_tuple__12, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 189, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_Raise(__pyx_t_4, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __PYX_ERR(0, 186, __pyx_L1_error)
+    __PYX_ERR(0, 189, __pyx_L1_error)
 
-    /* "dtls.pyx":185
+    /* "dtls.pyx":188
  *     cdef SSL *ssl = <SSL *>ssl_ptr
  *     cdef int sent_bytes = SSL_write(ssl, data, len(data))
  *     if sent_bytes <= 0:             # <<<<<<<<<<<<<<
@@ -4823,7 +4979,7 @@ static PyObject *__pyx_pf_4dtls_18dtls_send(CYTHON_UNUSED PyObject *__pyx_self, 
  */
   }
 
-  /* "dtls.pyx":187
+  /* "dtls.pyx":190
  *     if sent_bytes <= 0:
  *         raise OSError("Failed to send DTLS data.")
  *     return sent_bytes             # <<<<<<<<<<<<<<
@@ -4831,13 +4987,13 @@ static PyObject *__pyx_pf_4dtls_18dtls_send(CYTHON_UNUSED PyObject *__pyx_self, 
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_sent_bytes); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 187, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_sent_bytes); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 190, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_r = __pyx_t_4;
   __pyx_t_4 = 0;
   goto __pyx_L0;
 
-  /* "dtls.pyx":182
+  /* "dtls.pyx":185
  * 
  * 
  * def dtls_send(uintptr_t ssl_ptr, bytes data):             # <<<<<<<<<<<<<<
@@ -4856,7 +5012,7 @@ static PyObject *__pyx_pf_4dtls_18dtls_send(CYTHON_UNUSED PyObject *__pyx_self, 
   return __pyx_r;
 }
 
-/* "dtls.pyx":190
+/* "dtls.pyx":193
  * 
  * 
  * def dtls_recv(uintptr_t ssl_ptr, int bufsize):             # <<<<<<<<<<<<<<
@@ -4865,15 +5021,15 @@ static PyObject *__pyx_pf_4dtls_18dtls_send(CYTHON_UNUSED PyObject *__pyx_self, 
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4dtls_21dtls_recv(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_4dtls_23dtls_recv(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_4dtls_21dtls_recv = {"dtls_recv", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_4dtls_21dtls_recv, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_4dtls_21dtls_recv(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_4dtls_23dtls_recv = {"dtls_recv", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_4dtls_23dtls_recv, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_4dtls_23dtls_recv(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -4920,7 +5076,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 190, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 193, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -4928,14 +5084,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 190, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 193, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("dtls_recv", 1, 2, 2, 1); __PYX_ERR(0, 190, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("dtls_recv", 1, 2, 2, 1); __PYX_ERR(0, 193, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "dtls_recv") < 0)) __PYX_ERR(0, 190, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "dtls_recv") < 0)) __PYX_ERR(0, 193, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 2)) {
       goto __pyx_L5_argtuple_error;
@@ -4943,12 +5099,12 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       values[0] = __Pyx_Arg_FASTCALL(__pyx_args, 0);
       values[1] = __Pyx_Arg_FASTCALL(__pyx_args, 1);
     }
-    __pyx_v_ssl_ptr = __Pyx_PyInt_As_size_t(values[0]); if (unlikely((__pyx_v_ssl_ptr == ((uintptr_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 190, __pyx_L3_error)
-    __pyx_v_bufsize = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_bufsize == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 190, __pyx_L3_error)
+    __pyx_v_ssl_ptr = __Pyx_PyInt_As_size_t(values[0]); if (unlikely((__pyx_v_ssl_ptr == ((uintptr_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 193, __pyx_L3_error)
+    __pyx_v_bufsize = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_bufsize == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 193, __pyx_L3_error)
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("dtls_recv", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 190, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("dtls_recv", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 193, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -4962,7 +5118,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_4dtls_20dtls_recv(__pyx_self, __pyx_v_ssl_ptr, __pyx_v_bufsize);
+  __pyx_r = __pyx_pf_4dtls_22dtls_recv(__pyx_self, __pyx_v_ssl_ptr, __pyx_v_bufsize);
 
   /* function exit code */
   {
@@ -4975,7 +5131,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4dtls_20dtls_recv(CYTHON_UNUSED PyObject *__pyx_self, uintptr_t __pyx_v_ssl_ptr, int __pyx_v_bufsize) {
+static PyObject *__pyx_pf_4dtls_22dtls_recv(CYTHON_UNUSED PyObject *__pyx_self, uintptr_t __pyx_v_ssl_ptr, int __pyx_v_bufsize) {
   SSL *__pyx_v_ssl;
   char *__pyx_v_buf;
   int __pyx_v_received_bytes;
@@ -4989,7 +5145,7 @@ static PyObject *__pyx_pf_4dtls_20dtls_recv(CYTHON_UNUSED PyObject *__pyx_self, 
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("dtls_recv", 1);
 
-  /* "dtls.pyx":191
+  /* "dtls.pyx":194
  * 
  * def dtls_recv(uintptr_t ssl_ptr, int bufsize):
  *     cdef SSL *ssl = <SSL *>ssl_ptr             # <<<<<<<<<<<<<<
@@ -4998,7 +5154,7 @@ static PyObject *__pyx_pf_4dtls_20dtls_recv(CYTHON_UNUSED PyObject *__pyx_self, 
  */
   __pyx_v_ssl = ((SSL *)__pyx_v_ssl_ptr);
 
-  /* "dtls.pyx":192
+  /* "dtls.pyx":195
  * def dtls_recv(uintptr_t ssl_ptr, int bufsize):
  *     cdef SSL *ssl = <SSL *>ssl_ptr
  *     cdef char *buf = <char *>malloc(bufsize)             # <<<<<<<<<<<<<<
@@ -5007,7 +5163,7 @@ static PyObject *__pyx_pf_4dtls_20dtls_recv(CYTHON_UNUSED PyObject *__pyx_self, 
  */
   __pyx_v_buf = ((char *)malloc(__pyx_v_bufsize));
 
-  /* "dtls.pyx":193
+  /* "dtls.pyx":196
  *     cdef SSL *ssl = <SSL *>ssl_ptr
  *     cdef char *buf = <char *>malloc(bufsize)
  *     if buf == NULL:             # <<<<<<<<<<<<<<
@@ -5017,20 +5173,20 @@ static PyObject *__pyx_pf_4dtls_20dtls_recv(CYTHON_UNUSED PyObject *__pyx_self, 
   __pyx_t_1 = (__pyx_v_buf == NULL);
   if (unlikely(__pyx_t_1)) {
 
-    /* "dtls.pyx":194
+    /* "dtls.pyx":197
  *     cdef char *buf = <char *>malloc(bufsize)
  *     if buf == NULL:
  *         raise MemoryError("malloc() failed.")             # <<<<<<<<<<<<<<
  * 
  *     cdef int received_bytes = SSL_read(ssl, buf, bufsize)
  */
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_MemoryError, __pyx_tuple__13, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 194, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_MemoryError, __pyx_tuple__13, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 197, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(0, 194, __pyx_L1_error)
+    __PYX_ERR(0, 197, __pyx_L1_error)
 
-    /* "dtls.pyx":193
+    /* "dtls.pyx":196
  *     cdef SSL *ssl = <SSL *>ssl_ptr
  *     cdef char *buf = <char *>malloc(bufsize)
  *     if buf == NULL:             # <<<<<<<<<<<<<<
@@ -5039,7 +5195,7 @@ static PyObject *__pyx_pf_4dtls_20dtls_recv(CYTHON_UNUSED PyObject *__pyx_self, 
  */
   }
 
-  /* "dtls.pyx":196
+  /* "dtls.pyx":199
  *         raise MemoryError("malloc() failed.")
  * 
  *     cdef int received_bytes = SSL_read(ssl, buf, bufsize)             # <<<<<<<<<<<<<<
@@ -5048,7 +5204,7 @@ static PyObject *__pyx_pf_4dtls_20dtls_recv(CYTHON_UNUSED PyObject *__pyx_self, 
  */
   __pyx_v_received_bytes = SSL_read(__pyx_v_ssl, __pyx_v_buf, __pyx_v_bufsize);
 
-  /* "dtls.pyx":198
+  /* "dtls.pyx":201
  *     cdef int received_bytes = SSL_read(ssl, buf, bufsize)
  * 
  *     if received_bytes <= 0:             # <<<<<<<<<<<<<<
@@ -5058,7 +5214,7 @@ static PyObject *__pyx_pf_4dtls_20dtls_recv(CYTHON_UNUSED PyObject *__pyx_self, 
   __pyx_t_1 = (__pyx_v_received_bytes <= 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "dtls.pyx":199
+    /* "dtls.pyx":202
  * 
  *     if received_bytes <= 0:
  *         free(buf)             # <<<<<<<<<<<<<<
@@ -5067,20 +5223,20 @@ static PyObject *__pyx_pf_4dtls_20dtls_recv(CYTHON_UNUSED PyObject *__pyx_self, 
  */
     free(__pyx_v_buf);
 
-    /* "dtls.pyx":200
+    /* "dtls.pyx":203
  *     if received_bytes <= 0:
  *         free(buf)
  *         raise OSError("DTLS reception failed or connection closed.")             # <<<<<<<<<<<<<<
  * 
  *     result = PyBytes_FromStringAndSize(buf, received_bytes)
  */
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_OSError, __pyx_tuple__14, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 200, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_OSError, __pyx_tuple__14, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 203, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(0, 200, __pyx_L1_error)
+    __PYX_ERR(0, 203, __pyx_L1_error)
 
-    /* "dtls.pyx":198
+    /* "dtls.pyx":201
  *     cdef int received_bytes = SSL_read(ssl, buf, bufsize)
  * 
  *     if received_bytes <= 0:             # <<<<<<<<<<<<<<
@@ -5089,19 +5245,19 @@ static PyObject *__pyx_pf_4dtls_20dtls_recv(CYTHON_UNUSED PyObject *__pyx_self, 
  */
   }
 
-  /* "dtls.pyx":202
+  /* "dtls.pyx":205
  *         raise OSError("DTLS reception failed or connection closed.")
  * 
  *     result = PyBytes_FromStringAndSize(buf, received_bytes)             # <<<<<<<<<<<<<<
  *     free(buf)
  *     return result
  */
-  __pyx_t_2 = PyBytes_FromStringAndSize(__pyx_v_buf, __pyx_v_received_bytes); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 202, __pyx_L1_error)
+  __pyx_t_2 = PyBytes_FromStringAndSize(__pyx_v_buf, __pyx_v_received_bytes); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 205, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_v_result = ((PyObject*)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "dtls.pyx":203
+  /* "dtls.pyx":206
  * 
  *     result = PyBytes_FromStringAndSize(buf, received_bytes)
  *     free(buf)             # <<<<<<<<<<<<<<
@@ -5110,7 +5266,7 @@ static PyObject *__pyx_pf_4dtls_20dtls_recv(CYTHON_UNUSED PyObject *__pyx_self, 
  */
   free(__pyx_v_buf);
 
-  /* "dtls.pyx":204
+  /* "dtls.pyx":207
  *     result = PyBytes_FromStringAndSize(buf, received_bytes)
  *     free(buf)
  *     return result             # <<<<<<<<<<<<<<
@@ -5122,7 +5278,7 @@ static PyObject *__pyx_pf_4dtls_20dtls_recv(CYTHON_UNUSED PyObject *__pyx_self, 
   __pyx_r = __pyx_v_result;
   goto __pyx_L0;
 
-  /* "dtls.pyx":190
+  /* "dtls.pyx":193
  * 
  * 
  * def dtls_recv(uintptr_t ssl_ptr, int bufsize):             # <<<<<<<<<<<<<<
@@ -5142,7 +5298,7 @@ static PyObject *__pyx_pf_4dtls_20dtls_recv(CYTHON_UNUSED PyObject *__pyx_self, 
   return __pyx_r;
 }
 
-/* "dtls.pyx":207
+/* "dtls.pyx":210
  * 
  * 
  * def dtls_load_certificate_pem_file(uintptr_t ctx_ptr, str filename):             # <<<<<<<<<<<<<<
@@ -5151,15 +5307,15 @@ static PyObject *__pyx_pf_4dtls_20dtls_recv(CYTHON_UNUSED PyObject *__pyx_self, 
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4dtls_23dtls_load_certificate_pem_file(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_4dtls_25dtls_load_certificate_pem_file(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_4dtls_23dtls_load_certificate_pem_file = {"dtls_load_certificate_pem_file", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_4dtls_23dtls_load_certificate_pem_file, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_4dtls_23dtls_load_certificate_pem_file(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_4dtls_25dtls_load_certificate_pem_file = {"dtls_load_certificate_pem_file", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_4dtls_25dtls_load_certificate_pem_file, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_4dtls_25dtls_load_certificate_pem_file(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -5206,7 +5362,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 207, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 210, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -5214,14 +5370,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 207, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 210, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("dtls_load_certificate_pem_file", 1, 2, 2, 1); __PYX_ERR(0, 207, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("dtls_load_certificate_pem_file", 1, 2, 2, 1); __PYX_ERR(0, 210, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "dtls_load_certificate_pem_file") < 0)) __PYX_ERR(0, 207, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "dtls_load_certificate_pem_file") < 0)) __PYX_ERR(0, 210, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 2)) {
       goto __pyx_L5_argtuple_error;
@@ -5229,12 +5385,12 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       values[0] = __Pyx_Arg_FASTCALL(__pyx_args, 0);
       values[1] = __Pyx_Arg_FASTCALL(__pyx_args, 1);
     }
-    __pyx_v_ctx_ptr = __Pyx_PyInt_As_size_t(values[0]); if (unlikely((__pyx_v_ctx_ptr == ((uintptr_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 207, __pyx_L3_error)
+    __pyx_v_ctx_ptr = __Pyx_PyInt_As_size_t(values[0]); if (unlikely((__pyx_v_ctx_ptr == ((uintptr_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 210, __pyx_L3_error)
     __pyx_v_filename = ((PyObject*)values[1]);
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("dtls_load_certificate_pem_file", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 207, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("dtls_load_certificate_pem_file", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 210, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -5248,8 +5404,8 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_filename), (&PyString_Type), 1, "filename", 1))) __PYX_ERR(0, 207, __pyx_L1_error)
-  __pyx_r = __pyx_pf_4dtls_22dtls_load_certificate_pem_file(__pyx_self, __pyx_v_ctx_ptr, __pyx_v_filename);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_filename), (&PyString_Type), 1, "filename", 1))) __PYX_ERR(0, 210, __pyx_L1_error)
+  __pyx_r = __pyx_pf_4dtls_24dtls_load_certificate_pem_file(__pyx_self, __pyx_v_ctx_ptr, __pyx_v_filename);
 
   /* function exit code */
   goto __pyx_L0;
@@ -5266,7 +5422,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4dtls_22dtls_load_certificate_pem_file(CYTHON_UNUSED PyObject *__pyx_self, uintptr_t __pyx_v_ctx_ptr, PyObject *__pyx_v_filename) {
+static PyObject *__pyx_pf_4dtls_24dtls_load_certificate_pem_file(CYTHON_UNUSED PyObject *__pyx_self, uintptr_t __pyx_v_ctx_ptr, PyObject *__pyx_v_filename) {
   SSL_CTX *__pyx_v_ctx;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -5278,7 +5434,7 @@ static PyObject *__pyx_pf_4dtls_22dtls_load_certificate_pem_file(CYTHON_UNUSED P
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("dtls_load_certificate_pem_file", 1);
 
-  /* "dtls.pyx":208
+  /* "dtls.pyx":211
  * 
  * def dtls_load_certificate_pem_file(uintptr_t ctx_ptr, str filename):
  *     cdef SSL_CTX *ctx = <SSL_CTX *>ctx_ptr             # <<<<<<<<<<<<<<
@@ -5287,34 +5443,34 @@ static PyObject *__pyx_pf_4dtls_22dtls_load_certificate_pem_file(CYTHON_UNUSED P
  */
   __pyx_v_ctx = ((SSL_CTX *)__pyx_v_ctx_ptr);
 
-  /* "dtls.pyx":209
+  /* "dtls.pyx":212
  * def dtls_load_certificate_pem_file(uintptr_t ctx_ptr, str filename):
  *     cdef SSL_CTX *ctx = <SSL_CTX *>ctx_ptr
  *     if SSL_CTX_use_certificate_file(ctx, filename.encode(), SSL_FILETYPE_PEM) != 1:             # <<<<<<<<<<<<<<
  *         raise OSError("Cannot load certificate.")
  * 
  */
-  __pyx_t_1 = __Pyx_CallUnboundCMethod0(&__pyx_umethod_PyString_Type_encode, __pyx_v_filename); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 209, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CallUnboundCMethod0(&__pyx_umethod_PyString_Type_encode, __pyx_v_filename); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 212, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_AsString(__pyx_t_1); if (unlikely((!__pyx_t_2) && PyErr_Occurred())) __PYX_ERR(0, 209, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_AsString(__pyx_t_1); if (unlikely((!__pyx_t_2) && PyErr_Occurred())) __PYX_ERR(0, 212, __pyx_L1_error)
   __pyx_t_3 = (SSL_CTX_use_certificate_file(__pyx_v_ctx, __pyx_t_2, SSL_FILETYPE_PEM) != 1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   if (unlikely(__pyx_t_3)) {
 
-    /* "dtls.pyx":210
+    /* "dtls.pyx":213
  *     cdef SSL_CTX *ctx = <SSL_CTX *>ctx_ptr
  *     if SSL_CTX_use_certificate_file(ctx, filename.encode(), SSL_FILETYPE_PEM) != 1:
  *         raise OSError("Cannot load certificate.")             # <<<<<<<<<<<<<<
  * 
  * 
  */
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_OSError, __pyx_tuple__15, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 210, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_OSError, __pyx_tuple__15, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 213, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 210, __pyx_L1_error)
+    __PYX_ERR(0, 213, __pyx_L1_error)
 
-    /* "dtls.pyx":209
+    /* "dtls.pyx":212
  * def dtls_load_certificate_pem_file(uintptr_t ctx_ptr, str filename):
  *     cdef SSL_CTX *ctx = <SSL_CTX *>ctx_ptr
  *     if SSL_CTX_use_certificate_file(ctx, filename.encode(), SSL_FILETYPE_PEM) != 1:             # <<<<<<<<<<<<<<
@@ -5323,7 +5479,7 @@ static PyObject *__pyx_pf_4dtls_22dtls_load_certificate_pem_file(CYTHON_UNUSED P
  */
   }
 
-  /* "dtls.pyx":207
+  /* "dtls.pyx":210
  * 
  * 
  * def dtls_load_certificate_pem_file(uintptr_t ctx_ptr, str filename):             # <<<<<<<<<<<<<<
@@ -5344,7 +5500,7 @@ static PyObject *__pyx_pf_4dtls_22dtls_load_certificate_pem_file(CYTHON_UNUSED P
   return __pyx_r;
 }
 
-/* "dtls.pyx":213
+/* "dtls.pyx":216
  * 
  * 
  * def dtls_load_private_private_key_pem_file(uintptr_t ctx_ptr, str filename):             # <<<<<<<<<<<<<<
@@ -5353,15 +5509,15 @@ static PyObject *__pyx_pf_4dtls_22dtls_load_certificate_pem_file(CYTHON_UNUSED P
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4dtls_25dtls_load_private_private_key_pem_file(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_4dtls_27dtls_load_private_private_key_pem_file(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_4dtls_25dtls_load_private_private_key_pem_file = {"dtls_load_private_private_key_pem_file", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_4dtls_25dtls_load_private_private_key_pem_file, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_4dtls_25dtls_load_private_private_key_pem_file(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_4dtls_27dtls_load_private_private_key_pem_file = {"dtls_load_private_private_key_pem_file", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_4dtls_27dtls_load_private_private_key_pem_file, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_4dtls_27dtls_load_private_private_key_pem_file(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -5408,7 +5564,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 213, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 216, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -5416,14 +5572,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 213, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 216, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("dtls_load_private_private_key_pem_file", 1, 2, 2, 1); __PYX_ERR(0, 213, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("dtls_load_private_private_key_pem_file", 1, 2, 2, 1); __PYX_ERR(0, 216, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "dtls_load_private_private_key_pem_file") < 0)) __PYX_ERR(0, 213, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "dtls_load_private_private_key_pem_file") < 0)) __PYX_ERR(0, 216, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 2)) {
       goto __pyx_L5_argtuple_error;
@@ -5431,12 +5587,12 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       values[0] = __Pyx_Arg_FASTCALL(__pyx_args, 0);
       values[1] = __Pyx_Arg_FASTCALL(__pyx_args, 1);
     }
-    __pyx_v_ctx_ptr = __Pyx_PyInt_As_size_t(values[0]); if (unlikely((__pyx_v_ctx_ptr == ((uintptr_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 213, __pyx_L3_error)
+    __pyx_v_ctx_ptr = __Pyx_PyInt_As_size_t(values[0]); if (unlikely((__pyx_v_ctx_ptr == ((uintptr_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 216, __pyx_L3_error)
     __pyx_v_filename = ((PyObject*)values[1]);
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("dtls_load_private_private_key_pem_file", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 213, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("dtls_load_private_private_key_pem_file", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 216, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -5450,8 +5606,8 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_filename), (&PyString_Type), 1, "filename", 1))) __PYX_ERR(0, 213, __pyx_L1_error)
-  __pyx_r = __pyx_pf_4dtls_24dtls_load_private_private_key_pem_file(__pyx_self, __pyx_v_ctx_ptr, __pyx_v_filename);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_filename), (&PyString_Type), 1, "filename", 1))) __PYX_ERR(0, 216, __pyx_L1_error)
+  __pyx_r = __pyx_pf_4dtls_26dtls_load_private_private_key_pem_file(__pyx_self, __pyx_v_ctx_ptr, __pyx_v_filename);
 
   /* function exit code */
   goto __pyx_L0;
@@ -5468,7 +5624,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4dtls_24dtls_load_private_private_key_pem_file(CYTHON_UNUSED PyObject *__pyx_self, uintptr_t __pyx_v_ctx_ptr, PyObject *__pyx_v_filename) {
+static PyObject *__pyx_pf_4dtls_26dtls_load_private_private_key_pem_file(CYTHON_UNUSED PyObject *__pyx_self, uintptr_t __pyx_v_ctx_ptr, PyObject *__pyx_v_filename) {
   SSL_CTX *__pyx_v_ctx;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -5480,7 +5636,7 @@ static PyObject *__pyx_pf_4dtls_24dtls_load_private_private_key_pem_file(CYTHON_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("dtls_load_private_private_key_pem_file", 1);
 
-  /* "dtls.pyx":214
+  /* "dtls.pyx":217
  * 
  * def dtls_load_private_private_key_pem_file(uintptr_t ctx_ptr, str filename):
  *     cdef SSL_CTX *ctx = <SSL_CTX *>ctx_ptr             # <<<<<<<<<<<<<<
@@ -5489,31 +5645,31 @@ static PyObject *__pyx_pf_4dtls_24dtls_load_private_private_key_pem_file(CYTHON_
  */
   __pyx_v_ctx = ((SSL_CTX *)__pyx_v_ctx_ptr);
 
-  /* "dtls.pyx":215
+  /* "dtls.pyx":218
  * def dtls_load_private_private_key_pem_file(uintptr_t ctx_ptr, str filename):
  *     cdef SSL_CTX *ctx = <SSL_CTX *>ctx_ptr
  *     if SSL_CTX_use_PrivateKey_file(ctx, filename.encode(), SSL_FILETYPE_PEM) != 1:             # <<<<<<<<<<<<<<
  *         raise OSError("Cannot load private key.")
  */
-  __pyx_t_1 = __Pyx_CallUnboundCMethod0(&__pyx_umethod_PyString_Type_encode, __pyx_v_filename); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 215, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CallUnboundCMethod0(&__pyx_umethod_PyString_Type_encode, __pyx_v_filename); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 218, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_AsString(__pyx_t_1); if (unlikely((!__pyx_t_2) && PyErr_Occurred())) __PYX_ERR(0, 215, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_AsString(__pyx_t_1); if (unlikely((!__pyx_t_2) && PyErr_Occurred())) __PYX_ERR(0, 218, __pyx_L1_error)
   __pyx_t_3 = (SSL_CTX_use_PrivateKey_file(__pyx_v_ctx, __pyx_t_2, SSL_FILETYPE_PEM) != 1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   if (unlikely(__pyx_t_3)) {
 
-    /* "dtls.pyx":216
+    /* "dtls.pyx":219
  *     cdef SSL_CTX *ctx = <SSL_CTX *>ctx_ptr
  *     if SSL_CTX_use_PrivateKey_file(ctx, filename.encode(), SSL_FILETYPE_PEM) != 1:
  *         raise OSError("Cannot load private key.")             # <<<<<<<<<<<<<<
  */
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_OSError, __pyx_tuple__16, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 216, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_OSError, __pyx_tuple__16, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 219, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 216, __pyx_L1_error)
+    __PYX_ERR(0, 219, __pyx_L1_error)
 
-    /* "dtls.pyx":215
+    /* "dtls.pyx":218
  * def dtls_load_private_private_key_pem_file(uintptr_t ctx_ptr, str filename):
  *     cdef SSL_CTX *ctx = <SSL_CTX *>ctx_ptr
  *     if SSL_CTX_use_PrivateKey_file(ctx, filename.encode(), SSL_FILETYPE_PEM) != 1:             # <<<<<<<<<<<<<<
@@ -5521,7 +5677,7 @@ static PyObject *__pyx_pf_4dtls_24dtls_load_private_private_key_pem_file(CYTHON_
  */
   }
 
-  /* "dtls.pyx":213
+  /* "dtls.pyx":216
  * 
  * 
  * def dtls_load_private_private_key_pem_file(uintptr_t ctx_ptr, str filename):             # <<<<<<<<<<<<<<
@@ -5577,7 +5733,7 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_n_s_MemoryError, __pyx_k_MemoryError, sizeof(__pyx_k_MemoryError), 0, 0, 1, 1},
     {&__pyx_n_s_OSError, __pyx_k_OSError, sizeof(__pyx_k_OSError), 0, 0, 1, 1},
     {&__pyx_kp_u_SSL_accept_failed, __pyx_k_SSL_accept_failed, sizeof(__pyx_k_SSL_accept_failed), 0, 1, 0, 0},
-    {&__pyx_n_s__42, __pyx_k__42, sizeof(__pyx_k__42), 0, 0, 1, 1},
+    {&__pyx_n_s__43, __pyx_k__43, sizeof(__pyx_k__43), 0, 0, 1, 1},
     {&__pyx_n_s_asyncio_coroutines, __pyx_k_asyncio_coroutines, sizeof(__pyx_k_asyncio_coroutines), 0, 0, 1, 1},
     {&__pyx_n_s_attach_socket_to_ssl, __pyx_k_attach_socket_to_ssl, sizeof(__pyx_k_attach_socket_to_ssl), 0, 0, 1, 1},
     {&__pyx_n_s_bio, __pyx_k_bio, sizeof(__pyx_k_bio), 0, 0, 1, 1},
@@ -5630,7 +5786,7 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
 static CYTHON_SMALL_CODE int __Pyx_InitCachedBuiltins(void) {
   __pyx_builtin_MemoryError = __Pyx_GetBuiltinName(__pyx_n_s_MemoryError); if (!__pyx_builtin_MemoryError) __PYX_ERR(0, 92, __pyx_L1_error)
   __pyx_builtin_OSError = __Pyx_GetBuiltinName(__pyx_n_s_OSError); if (!__pyx_builtin_OSError) __PYX_ERR(0, 106, __pyx_L1_error)
-  __pyx_builtin_print = __Pyx_GetBuiltinName(__pyx_n_s_print); if (!__pyx_builtin_print) __PYX_ERR(0, 170, __pyx_L1_error)
+  __pyx_builtin_print = __Pyx_GetBuiltinName(__pyx_n_s_print); if (!__pyx_builtin_print) __PYX_ERR(0, 173, __pyx_L1_error)
   return 0;
   __pyx_L1_error:;
   return -1;
@@ -5674,144 +5830,144 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__3);
   __Pyx_GIVEREF(__pyx_tuple__3);
 
-  /* "dtls.pyx":118
- * 
- *     if bind(sockfd, <const sockaddr *>&server_addr, sizeof(server_addr)) < 0:
- *         raise OSError("Cannot bind the socket to the specified port.")             # <<<<<<<<<<<<<<
- *     return sockfd
- * 
- */
-  __pyx_tuple__4 = PyTuple_Pack(1, __pyx_kp_s_Cannot_bind_the_socket_to_the_sp); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 118, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__4);
-  __Pyx_GIVEREF(__pyx_tuple__4);
-
-  /* "dtls.pyx":126
+  /* "dtls.pyx":113
  *     cdef BIO *bio = BIO_new_dgram(sockfd, 1)
  *     if bio == NULL:
  *         raise MemoryError("Cannot create a BIO DTLS.")             # <<<<<<<<<<<<<<
  * 
  *     SSL_set_bio(ssl, bio, bio)
  */
-  __pyx_tuple__5 = PyTuple_Pack(1, __pyx_kp_s_Cannot_create_a_BIO_DTLS); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 126, __pyx_L1_error)
+  __pyx_tuple__4 = PyTuple_Pack(1, __pyx_kp_s_Cannot_create_a_BIO_DTLS); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 113, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__4);
+  __Pyx_GIVEREF(__pyx_tuple__4);
+
+  /* "dtls.pyx":126
+ * 
+ *     if bind(sockfd, <const sockaddr *>&server_addr, sizeof(server_addr)) < 0:
+ *         raise OSError("Cannot bind the socket to the specified port.")             # <<<<<<<<<<<<<<
+ *     return sockfd
+ * 
+ */
+  __pyx_tuple__5 = PyTuple_Pack(1, __pyx_kp_s_Cannot_bind_the_socket_to_the_sp); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 126, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__5);
   __Pyx_GIVEREF(__pyx_tuple__5);
 
-  /* "dtls.pyx":138
+  /* "dtls.pyx":141
  * 
  *     if connect(sockfd, <const sockaddr *>&server_addr, sizeof(server_addr)) < 0:
  *         raise OSError("Cannot connect to the UDP socket.")             # <<<<<<<<<<<<<<
  * 
- *     BIO_ctrl(bio, BIO_CTRL_DGRAM_CONNECT, 0, &server_addr)
+ *     # BIO_ctrl(bio, BIO_CTRL_DGRAM_CONNECT, 0, &server_addr)
  */
-  __pyx_tuple__6 = PyTuple_Pack(1, __pyx_kp_s_Cannot_connect_to_the_UDP_socket); if (unlikely(!__pyx_tuple__6)) __PYX_ERR(0, 138, __pyx_L1_error)
+  __pyx_tuple__6 = PyTuple_Pack(1, __pyx_kp_s_Cannot_connect_to_the_UDP_socket); if (unlikely(!__pyx_tuple__6)) __PYX_ERR(0, 141, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__6);
   __Pyx_GIVEREF(__pyx_tuple__6);
 
-  /* "dtls.pyx":170
+  /* "dtls.pyx":173
  * 
  *     if is_server:
  *         print("[DEBUG] Mode serveur")             # <<<<<<<<<<<<<<
  *         result = SSL_accept(ssl)
  *     else:
  */
-  __pyx_tuple__7 = PyTuple_Pack(1, __pyx_kp_s_DEBUG_Mode_serveur); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(0, 170, __pyx_L1_error)
+  __pyx_tuple__7 = PyTuple_Pack(1, __pyx_kp_s_DEBUG_Mode_serveur); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(0, 173, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__7);
   __Pyx_GIVEREF(__pyx_tuple__7);
 
-  /* "dtls.pyx":173
+  /* "dtls.pyx":176
  *         result = SSL_accept(ssl)
  *     else:
  *         print("[DEBUG] Mode client")             # <<<<<<<<<<<<<<
  *         result = SSL_connect(ssl)
  * 
  */
-  __pyx_tuple__8 = PyTuple_Pack(1, __pyx_kp_s_DEBUG_Mode_client); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 173, __pyx_L1_error)
+  __pyx_tuple__8 = PyTuple_Pack(1, __pyx_kp_s_DEBUG_Mode_client); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 176, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__8);
   __Pyx_GIVEREF(__pyx_tuple__8);
 
-  /* "dtls.pyx":177
+  /* "dtls.pyx":180
  * 
  *     if result != 1:
  *         print("[DEBUG] Erreur dans SSL_connect/SSL_accept")             # <<<<<<<<<<<<<<
  *         raise OSError("DTLS handshake failed.")
  *     print("[DEBUG] Handshake russi !")
  */
-  __pyx_tuple__9 = PyTuple_Pack(1, __pyx_kp_s_DEBUG_Erreur_dans_SSL_connect_S); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 177, __pyx_L1_error)
+  __pyx_tuple__9 = PyTuple_Pack(1, __pyx_kp_s_DEBUG_Erreur_dans_SSL_connect_S); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 180, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__9);
   __Pyx_GIVEREF(__pyx_tuple__9);
 
-  /* "dtls.pyx":178
+  /* "dtls.pyx":181
  *     if result != 1:
  *         print("[DEBUG] Erreur dans SSL_connect/SSL_accept")
  *         raise OSError("DTLS handshake failed.")             # <<<<<<<<<<<<<<
  *     print("[DEBUG] Handshake russi !")
  * 
  */
-  __pyx_tuple__10 = PyTuple_Pack(1, __pyx_kp_s_DTLS_handshake_failed); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 178, __pyx_L1_error)
+  __pyx_tuple__10 = PyTuple_Pack(1, __pyx_kp_s_DTLS_handshake_failed); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 181, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__10);
   __Pyx_GIVEREF(__pyx_tuple__10);
 
-  /* "dtls.pyx":179
+  /* "dtls.pyx":182
  *         print("[DEBUG] Erreur dans SSL_connect/SSL_accept")
  *         raise OSError("DTLS handshake failed.")
  *     print("[DEBUG] Handshake russi !")             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __pyx_tuple__11 = PyTuple_Pack(1, __pyx_kp_s_DEBUG_Handshake_russi); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(0, 179, __pyx_L1_error)
+  __pyx_tuple__11 = PyTuple_Pack(1, __pyx_kp_s_DEBUG_Handshake_russi); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(0, 182, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__11);
   __Pyx_GIVEREF(__pyx_tuple__11);
 
-  /* "dtls.pyx":186
+  /* "dtls.pyx":189
  *     cdef int sent_bytes = SSL_write(ssl, data, len(data))
  *     if sent_bytes <= 0:
  *         raise OSError("Failed to send DTLS data.")             # <<<<<<<<<<<<<<
  *     return sent_bytes
  * 
  */
-  __pyx_tuple__12 = PyTuple_Pack(1, __pyx_kp_s_Failed_to_send_DTLS_data); if (unlikely(!__pyx_tuple__12)) __PYX_ERR(0, 186, __pyx_L1_error)
+  __pyx_tuple__12 = PyTuple_Pack(1, __pyx_kp_s_Failed_to_send_DTLS_data); if (unlikely(!__pyx_tuple__12)) __PYX_ERR(0, 189, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__12);
   __Pyx_GIVEREF(__pyx_tuple__12);
 
-  /* "dtls.pyx":194
+  /* "dtls.pyx":197
  *     cdef char *buf = <char *>malloc(bufsize)
  *     if buf == NULL:
  *         raise MemoryError("malloc() failed.")             # <<<<<<<<<<<<<<
  * 
  *     cdef int received_bytes = SSL_read(ssl, buf, bufsize)
  */
-  __pyx_tuple__13 = PyTuple_Pack(1, __pyx_kp_s_malloc_failed); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(0, 194, __pyx_L1_error)
+  __pyx_tuple__13 = PyTuple_Pack(1, __pyx_kp_s_malloc_failed); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(0, 197, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__13);
   __Pyx_GIVEREF(__pyx_tuple__13);
 
-  /* "dtls.pyx":200
+  /* "dtls.pyx":203
  *     if received_bytes <= 0:
  *         free(buf)
  *         raise OSError("DTLS reception failed or connection closed.")             # <<<<<<<<<<<<<<
  * 
  *     result = PyBytes_FromStringAndSize(buf, received_bytes)
  */
-  __pyx_tuple__14 = PyTuple_Pack(1, __pyx_kp_s_DTLS_reception_failed_or_connect); if (unlikely(!__pyx_tuple__14)) __PYX_ERR(0, 200, __pyx_L1_error)
+  __pyx_tuple__14 = PyTuple_Pack(1, __pyx_kp_s_DTLS_reception_failed_or_connect); if (unlikely(!__pyx_tuple__14)) __PYX_ERR(0, 203, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__14);
   __Pyx_GIVEREF(__pyx_tuple__14);
 
-  /* "dtls.pyx":210
+  /* "dtls.pyx":213
  *     cdef SSL_CTX *ctx = <SSL_CTX *>ctx_ptr
  *     if SSL_CTX_use_certificate_file(ctx, filename.encode(), SSL_FILETYPE_PEM) != 1:
  *         raise OSError("Cannot load certificate.")             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __pyx_tuple__15 = PyTuple_Pack(1, __pyx_kp_s_Cannot_load_certificate); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(0, 210, __pyx_L1_error)
+  __pyx_tuple__15 = PyTuple_Pack(1, __pyx_kp_s_Cannot_load_certificate); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(0, 213, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__15);
   __Pyx_GIVEREF(__pyx_tuple__15);
 
-  /* "dtls.pyx":216
+  /* "dtls.pyx":219
  *     cdef SSL_CTX *ctx = <SSL_CTX *>ctx_ptr
  *     if SSL_CTX_use_PrivateKey_file(ctx, filename.encode(), SSL_FILETYPE_PEM) != 1:
  *         raise OSError("Cannot load private key.")             # <<<<<<<<<<<<<<
  */
-  __pyx_tuple__16 = PyTuple_Pack(1, __pyx_kp_s_Cannot_load_private_key); if (unlikely(!__pyx_tuple__16)) __PYX_ERR(0, 216, __pyx_L1_error)
+  __pyx_tuple__16 = PyTuple_Pack(1, __pyx_kp_s_Cannot_load_private_key); if (unlikely(!__pyx_tuple__16)) __PYX_ERR(0, 219, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__16);
   __Pyx_GIVEREF(__pyx_tuple__16);
 
@@ -5860,113 +6016,122 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__22);
   __pyx_codeobj__23 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__22, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_dtls_pyx, __pyx_n_s_create_dtls_socket, 103, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__23)) __PYX_ERR(0, 103, __pyx_L1_error)
 
-  /* "dtls.pyx":110
+  /* "dtls.pyx":109
+ *     return sockfd
+ * 
+ * def attach_socket_to_ssl(uintptr_t ssl_ptr, int sockfd):             # <<<<<<<<<<<<<<
+ *     cdef SSL *ssl = <SSL *>ssl_ptr
+ *     cdef BIO *bio = BIO_new_dgram(sockfd, 1)
+ */
+  __pyx_tuple__24 = PyTuple_Pack(4, __pyx_n_s_ssl_ptr, __pyx_n_s_sockfd, __pyx_n_s_ssl, __pyx_n_s_bio); if (unlikely(!__pyx_tuple__24)) __PYX_ERR(0, 109, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__24);
+  __Pyx_GIVEREF(__pyx_tuple__24);
+  __pyx_codeobj__25 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__24, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_dtls_pyx, __pyx_n_s_attach_socket_to_ssl, 109, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__25)) __PYX_ERR(0, 109, __pyx_L1_error)
+
+  /* "dtls.pyx":118
  * 
  * 
  * def dtls_bind(int sockfd, int port, str ip="127.0.0.1"):             # <<<<<<<<<<<<<<
  *     cdef sockaddr_in server_addr
  *     memset(&server_addr, 0, sizeof(server_addr))
  */
-  __pyx_tuple__24 = PyTuple_Pack(4, __pyx_n_s_sockfd, __pyx_n_s_port, __pyx_n_s_ip, __pyx_n_s_server_addr); if (unlikely(!__pyx_tuple__24)) __PYX_ERR(0, 110, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__24);
-  __Pyx_GIVEREF(__pyx_tuple__24);
-  __pyx_codeobj__25 = (PyObject*)__Pyx_PyCode_New(3, 0, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__24, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_dtls_pyx, __pyx_n_s_dtls_bind, 110, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__25)) __PYX_ERR(0, 110, __pyx_L1_error)
-  __pyx_tuple__26 = PyTuple_Pack(1, ((PyObject*)__pyx_kp_s_127_0_0_1)); if (unlikely(!__pyx_tuple__26)) __PYX_ERR(0, 110, __pyx_L1_error)
+  __pyx_tuple__26 = PyTuple_Pack(4, __pyx_n_s_sockfd, __pyx_n_s_port, __pyx_n_s_ip, __pyx_n_s_server_addr); if (unlikely(!__pyx_tuple__26)) __PYX_ERR(0, 118, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__26);
   __Pyx_GIVEREF(__pyx_tuple__26);
+  __pyx_codeobj__27 = (PyObject*)__Pyx_PyCode_New(3, 0, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__26, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_dtls_pyx, __pyx_n_s_dtls_bind, 118, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__27)) __PYX_ERR(0, 118, __pyx_L1_error)
+  __pyx_tuple__28 = PyTuple_Pack(1, ((PyObject*)__pyx_kp_s_127_0_0_1)); if (unlikely(!__pyx_tuple__28)) __PYX_ERR(0, 118, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__28);
+  __Pyx_GIVEREF(__pyx_tuple__28);
 
-  /* "dtls.pyx":122
+  /* "dtls.pyx":130
  * 
  * 
  * def dtls_connect(uintptr_t ssl_ptr, int sockfd, str ip, int port):             # <<<<<<<<<<<<<<
  *     cdef SSL *ssl = <SSL *>ssl_ptr
- *     cdef BIO *bio = BIO_new_dgram(sockfd, 1)
+ * 
  */
-  __pyx_tuple__27 = PyTuple_Pack(7, __pyx_n_s_ssl_ptr, __pyx_n_s_sockfd, __pyx_n_s_ip, __pyx_n_s_port, __pyx_n_s_ssl, __pyx_n_s_bio, __pyx_n_s_server_addr); if (unlikely(!__pyx_tuple__27)) __PYX_ERR(0, 122, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__27);
-  __Pyx_GIVEREF(__pyx_tuple__27);
-  __pyx_codeobj__28 = (PyObject*)__Pyx_PyCode_New(4, 0, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__27, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_dtls_pyx, __pyx_n_s_dtls_connect, 122, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__28)) __PYX_ERR(0, 122, __pyx_L1_error)
+  __pyx_tuple__29 = PyTuple_Pack(6, __pyx_n_s_ssl_ptr, __pyx_n_s_sockfd, __pyx_n_s_ip, __pyx_n_s_port, __pyx_n_s_ssl, __pyx_n_s_server_addr); if (unlikely(!__pyx_tuple__29)) __PYX_ERR(0, 130, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__29);
+  __Pyx_GIVEREF(__pyx_tuple__29);
+  __pyx_codeobj__30 = (PyObject*)__Pyx_PyCode_New(4, 0, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__29, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_dtls_pyx, __pyx_n_s_dtls_connect, 130, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__30)) __PYX_ERR(0, 130, __pyx_L1_error)
 
-  /* "dtls.pyx":143
+  /* "dtls.pyx":146
  * 
  * 
  * def attach_socket_to_ssl(uintptr_t ssl_ptr, int sockfd):             # <<<<<<<<<<<<<<
  *     cdef SSL *ssl = <SSL *>ssl_ptr
  *     cdef BIO *bio = BIO_new_dgram(sockfd, 1)
  */
-  __pyx_tuple__29 = PyTuple_Pack(4, __pyx_n_s_ssl_ptr, __pyx_n_s_sockfd, __pyx_n_s_ssl, __pyx_n_s_bio); if (unlikely(!__pyx_tuple__29)) __PYX_ERR(0, 143, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__29);
-  __Pyx_GIVEREF(__pyx_tuple__29);
-  __pyx_codeobj__30 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__29, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_dtls_pyx, __pyx_n_s_attach_socket_to_ssl, 143, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__30)) __PYX_ERR(0, 143, __pyx_L1_error)
+  __pyx_codeobj__31 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__24, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_dtls_pyx, __pyx_n_s_attach_socket_to_ssl, 146, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__31)) __PYX_ERR(0, 146, __pyx_L1_error)
 
-  /* "dtls.pyx":152
+  /* "dtls.pyx":155
  * 
  * 
  * def dtls_accept(uintptr_t ssl_ptr):             # <<<<<<<<<<<<<<
  *     cdef SSL *ssl = <SSL *>ssl_ptr
  *     cdef int result
  */
-  __pyx_tuple__31 = PyTuple_Pack(5, __pyx_n_s_ssl_ptr, __pyx_n_s_ssl, __pyx_n_s_result, __pyx_n_s_err_code, __pyx_n_s_err_buf); if (unlikely(!__pyx_tuple__31)) __PYX_ERR(0, 152, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__31);
-  __Pyx_GIVEREF(__pyx_tuple__31);
-  __pyx_codeobj__32 = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__31, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_dtls_pyx, __pyx_n_s_dtls_accept, 152, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__32)) __PYX_ERR(0, 152, __pyx_L1_error)
+  __pyx_tuple__32 = PyTuple_Pack(5, __pyx_n_s_ssl_ptr, __pyx_n_s_ssl, __pyx_n_s_result, __pyx_n_s_err_code, __pyx_n_s_err_buf); if (unlikely(!__pyx_tuple__32)) __PYX_ERR(0, 155, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__32);
+  __Pyx_GIVEREF(__pyx_tuple__32);
+  __pyx_codeobj__33 = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__32, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_dtls_pyx, __pyx_n_s_dtls_accept, 155, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__33)) __PYX_ERR(0, 155, __pyx_L1_error)
 
-  /* "dtls.pyx":165
+  /* "dtls.pyx":168
  * 
  * 
  * def dtls_handshake(uintptr_t ssl_ptr, bint is_server=False):             # <<<<<<<<<<<<<<
  *     cdef SSL *ssl = <SSL *>ssl_ptr
  *     cdef int result
  */
-  __pyx_tuple__33 = PyTuple_Pack(4, __pyx_n_s_ssl_ptr, __pyx_n_s_is_server, __pyx_n_s_ssl, __pyx_n_s_result); if (unlikely(!__pyx_tuple__33)) __PYX_ERR(0, 165, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__33);
-  __Pyx_GIVEREF(__pyx_tuple__33);
-  __pyx_codeobj__34 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__33, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_dtls_pyx, __pyx_n_s_dtls_handshake, 165, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__34)) __PYX_ERR(0, 165, __pyx_L1_error)
+  __pyx_tuple__34 = PyTuple_Pack(4, __pyx_n_s_ssl_ptr, __pyx_n_s_is_server, __pyx_n_s_ssl, __pyx_n_s_result); if (unlikely(!__pyx_tuple__34)) __PYX_ERR(0, 168, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__34);
+  __Pyx_GIVEREF(__pyx_tuple__34);
+  __pyx_codeobj__35 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__34, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_dtls_pyx, __pyx_n_s_dtls_handshake, 168, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__35)) __PYX_ERR(0, 168, __pyx_L1_error)
 
-  /* "dtls.pyx":182
+  /* "dtls.pyx":185
  * 
  * 
  * def dtls_send(uintptr_t ssl_ptr, bytes data):             # <<<<<<<<<<<<<<
  *     cdef SSL *ssl = <SSL *>ssl_ptr
  *     cdef int sent_bytes = SSL_write(ssl, data, len(data))
  */
-  __pyx_tuple__35 = PyTuple_Pack(4, __pyx_n_s_ssl_ptr, __pyx_n_s_data, __pyx_n_s_ssl, __pyx_n_s_sent_bytes); if (unlikely(!__pyx_tuple__35)) __PYX_ERR(0, 182, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__35);
-  __Pyx_GIVEREF(__pyx_tuple__35);
-  __pyx_codeobj__36 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__35, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_dtls_pyx, __pyx_n_s_dtls_send, 182, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__36)) __PYX_ERR(0, 182, __pyx_L1_error)
+  __pyx_tuple__36 = PyTuple_Pack(4, __pyx_n_s_ssl_ptr, __pyx_n_s_data, __pyx_n_s_ssl, __pyx_n_s_sent_bytes); if (unlikely(!__pyx_tuple__36)) __PYX_ERR(0, 185, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__36);
+  __Pyx_GIVEREF(__pyx_tuple__36);
+  __pyx_codeobj__37 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__36, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_dtls_pyx, __pyx_n_s_dtls_send, 185, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__37)) __PYX_ERR(0, 185, __pyx_L1_error)
 
-  /* "dtls.pyx":190
+  /* "dtls.pyx":193
  * 
  * 
  * def dtls_recv(uintptr_t ssl_ptr, int bufsize):             # <<<<<<<<<<<<<<
  *     cdef SSL *ssl = <SSL *>ssl_ptr
  *     cdef char *buf = <char *>malloc(bufsize)
  */
-  __pyx_tuple__37 = PyTuple_Pack(6, __pyx_n_s_ssl_ptr, __pyx_n_s_bufsize, __pyx_n_s_ssl, __pyx_n_s_buf, __pyx_n_s_received_bytes, __pyx_n_s_result); if (unlikely(!__pyx_tuple__37)) __PYX_ERR(0, 190, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__37);
-  __Pyx_GIVEREF(__pyx_tuple__37);
-  __pyx_codeobj__38 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__37, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_dtls_pyx, __pyx_n_s_dtls_recv, 190, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__38)) __PYX_ERR(0, 190, __pyx_L1_error)
+  __pyx_tuple__38 = PyTuple_Pack(6, __pyx_n_s_ssl_ptr, __pyx_n_s_bufsize, __pyx_n_s_ssl, __pyx_n_s_buf, __pyx_n_s_received_bytes, __pyx_n_s_result); if (unlikely(!__pyx_tuple__38)) __PYX_ERR(0, 193, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__38);
+  __Pyx_GIVEREF(__pyx_tuple__38);
+  __pyx_codeobj__39 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__38, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_dtls_pyx, __pyx_n_s_dtls_recv, 193, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__39)) __PYX_ERR(0, 193, __pyx_L1_error)
 
-  /* "dtls.pyx":207
+  /* "dtls.pyx":210
  * 
  * 
  * def dtls_load_certificate_pem_file(uintptr_t ctx_ptr, str filename):             # <<<<<<<<<<<<<<
  *     cdef SSL_CTX *ctx = <SSL_CTX *>ctx_ptr
  *     if SSL_CTX_use_certificate_file(ctx, filename.encode(), SSL_FILETYPE_PEM) != 1:
  */
-  __pyx_tuple__39 = PyTuple_Pack(3, __pyx_n_s_ctx_ptr, __pyx_n_s_filename, __pyx_n_s_ctx); if (unlikely(!__pyx_tuple__39)) __PYX_ERR(0, 207, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__39);
-  __Pyx_GIVEREF(__pyx_tuple__39);
-  __pyx_codeobj__40 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__39, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_dtls_pyx, __pyx_n_s_dtls_load_certificate_pem_file, 207, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__40)) __PYX_ERR(0, 207, __pyx_L1_error)
+  __pyx_tuple__40 = PyTuple_Pack(3, __pyx_n_s_ctx_ptr, __pyx_n_s_filename, __pyx_n_s_ctx); if (unlikely(!__pyx_tuple__40)) __PYX_ERR(0, 210, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__40);
+  __Pyx_GIVEREF(__pyx_tuple__40);
+  __pyx_codeobj__41 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__40, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_dtls_pyx, __pyx_n_s_dtls_load_certificate_pem_file, 210, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__41)) __PYX_ERR(0, 210, __pyx_L1_error)
 
-  /* "dtls.pyx":213
+  /* "dtls.pyx":216
  * 
  * 
  * def dtls_load_private_private_key_pem_file(uintptr_t ctx_ptr, str filename):             # <<<<<<<<<<<<<<
  *     cdef SSL_CTX *ctx = <SSL_CTX *>ctx_ptr
  *     if SSL_CTX_use_PrivateKey_file(ctx, filename.encode(), SSL_FILETYPE_PEM) != 1:
  */
-  __pyx_codeobj__41 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__39, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_dtls_pyx, __pyx_n_s_dtls_load_private_private_key_pe, 213, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__41)) __PYX_ERR(0, 213, __pyx_L1_error)
+  __pyx_codeobj__42 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__40, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_dtls_pyx, __pyx_n_s_dtls_load_private_private_key_pe, 216, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__42)) __PYX_ERR(0, 216, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -6401,122 +6566,134 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_create_dtls_socket, __pyx_t_2) < 0) __PYX_ERR(0, 103, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "dtls.pyx":110
+  /* "dtls.pyx":109
+ *     return sockfd
+ * 
+ * def attach_socket_to_ssl(uintptr_t ssl_ptr, int sockfd):             # <<<<<<<<<<<<<<
+ *     cdef SSL *ssl = <SSL *>ssl_ptr
+ *     cdef BIO *bio = BIO_new_dgram(sockfd, 1)
+ */
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_4dtls_9attach_socket_to_ssl, 0, __pyx_n_s_attach_socket_to_ssl, NULL, __pyx_n_s_dtls, __pyx_d, ((PyObject *)__pyx_codeobj__25)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 109, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_attach_socket_to_ssl, __pyx_t_2) < 0) __PYX_ERR(0, 109, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+  /* "dtls.pyx":118
  * 
  * 
  * def dtls_bind(int sockfd, int port, str ip="127.0.0.1"):             # <<<<<<<<<<<<<<
  *     cdef sockaddr_in server_addr
  *     memset(&server_addr, 0, sizeof(server_addr))
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_4dtls_9dtls_bind, 0, __pyx_n_s_dtls_bind, NULL, __pyx_n_s_dtls, __pyx_d, ((PyObject *)__pyx_codeobj__25)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 110, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_4dtls_11dtls_bind, 0, __pyx_n_s_dtls_bind, NULL, __pyx_n_s_dtls, __pyx_d, ((PyObject *)__pyx_codeobj__27)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 118, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_tuple__26);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_dtls_bind, __pyx_t_2) < 0) __PYX_ERR(0, 110, __pyx_L1_error)
+  __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_tuple__28);
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_dtls_bind, __pyx_t_2) < 0) __PYX_ERR(0, 118, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "dtls.pyx":122
+  /* "dtls.pyx":130
  * 
  * 
  * def dtls_connect(uintptr_t ssl_ptr, int sockfd, str ip, int port):             # <<<<<<<<<<<<<<
  *     cdef SSL *ssl = <SSL *>ssl_ptr
- *     cdef BIO *bio = BIO_new_dgram(sockfd, 1)
+ * 
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_4dtls_11dtls_connect, 0, __pyx_n_s_dtls_connect, NULL, __pyx_n_s_dtls, __pyx_d, ((PyObject *)__pyx_codeobj__28)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 122, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_4dtls_13dtls_connect, 0, __pyx_n_s_dtls_connect, NULL, __pyx_n_s_dtls, __pyx_d, ((PyObject *)__pyx_codeobj__30)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 130, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_dtls_connect, __pyx_t_2) < 0) __PYX_ERR(0, 122, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_dtls_connect, __pyx_t_2) < 0) __PYX_ERR(0, 130, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "dtls.pyx":143
+  /* "dtls.pyx":146
  * 
  * 
  * def attach_socket_to_ssl(uintptr_t ssl_ptr, int sockfd):             # <<<<<<<<<<<<<<
  *     cdef SSL *ssl = <SSL *>ssl_ptr
  *     cdef BIO *bio = BIO_new_dgram(sockfd, 1)
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_4dtls_13attach_socket_to_ssl, 0, __pyx_n_s_attach_socket_to_ssl, NULL, __pyx_n_s_dtls, __pyx_d, ((PyObject *)__pyx_codeobj__30)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 143, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_4dtls_15attach_socket_to_ssl, 0, __pyx_n_s_attach_socket_to_ssl, NULL, __pyx_n_s_dtls, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 146, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_attach_socket_to_ssl, __pyx_t_2) < 0) __PYX_ERR(0, 143, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_attach_socket_to_ssl, __pyx_t_2) < 0) __PYX_ERR(0, 146, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "dtls.pyx":152
+  /* "dtls.pyx":155
  * 
  * 
  * def dtls_accept(uintptr_t ssl_ptr):             # <<<<<<<<<<<<<<
  *     cdef SSL *ssl = <SSL *>ssl_ptr
  *     cdef int result
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_4dtls_15dtls_accept, 0, __pyx_n_s_dtls_accept, NULL, __pyx_n_s_dtls, __pyx_d, ((PyObject *)__pyx_codeobj__32)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 152, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_4dtls_17dtls_accept, 0, __pyx_n_s_dtls_accept, NULL, __pyx_n_s_dtls, __pyx_d, ((PyObject *)__pyx_codeobj__33)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 155, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_dtls_accept, __pyx_t_2) < 0) __PYX_ERR(0, 152, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_dtls_accept, __pyx_t_2) < 0) __PYX_ERR(0, 155, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "dtls.pyx":165
+  /* "dtls.pyx":168
  * 
  * 
  * def dtls_handshake(uintptr_t ssl_ptr, bint is_server=False):             # <<<<<<<<<<<<<<
  *     cdef SSL *ssl = <SSL *>ssl_ptr
  *     cdef int result
  */
-  __pyx_t_2 = __Pyx_PyBool_FromLong(((int)0)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 165, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyBool_FromLong(((int)0)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 168, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 165, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 168, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_2);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_2)) __PYX_ERR(0, 165, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_2)) __PYX_ERR(0, 168, __pyx_L1_error);
   __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_4dtls_17dtls_handshake, 0, __pyx_n_s_dtls_handshake, NULL, __pyx_n_s_dtls, __pyx_d, ((PyObject *)__pyx_codeobj__34)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 165, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_4dtls_19dtls_handshake, 0, __pyx_n_s_dtls_handshake, NULL, __pyx_n_s_dtls, __pyx_d, ((PyObject *)__pyx_codeobj__35)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 168, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_t_3);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_dtls_handshake, __pyx_t_2) < 0) __PYX_ERR(0, 165, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_dtls_handshake, __pyx_t_2) < 0) __PYX_ERR(0, 168, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "dtls.pyx":182
+  /* "dtls.pyx":185
  * 
  * 
  * def dtls_send(uintptr_t ssl_ptr, bytes data):             # <<<<<<<<<<<<<<
  *     cdef SSL *ssl = <SSL *>ssl_ptr
  *     cdef int sent_bytes = SSL_write(ssl, data, len(data))
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_4dtls_19dtls_send, 0, __pyx_n_s_dtls_send, NULL, __pyx_n_s_dtls, __pyx_d, ((PyObject *)__pyx_codeobj__36)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 182, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_4dtls_21dtls_send, 0, __pyx_n_s_dtls_send, NULL, __pyx_n_s_dtls, __pyx_d, ((PyObject *)__pyx_codeobj__37)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 185, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_dtls_send, __pyx_t_2) < 0) __PYX_ERR(0, 182, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_dtls_send, __pyx_t_2) < 0) __PYX_ERR(0, 185, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "dtls.pyx":190
+  /* "dtls.pyx":193
  * 
  * 
  * def dtls_recv(uintptr_t ssl_ptr, int bufsize):             # <<<<<<<<<<<<<<
  *     cdef SSL *ssl = <SSL *>ssl_ptr
  *     cdef char *buf = <char *>malloc(bufsize)
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_4dtls_21dtls_recv, 0, __pyx_n_s_dtls_recv, NULL, __pyx_n_s_dtls, __pyx_d, ((PyObject *)__pyx_codeobj__38)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 190, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_4dtls_23dtls_recv, 0, __pyx_n_s_dtls_recv, NULL, __pyx_n_s_dtls, __pyx_d, ((PyObject *)__pyx_codeobj__39)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 193, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_dtls_recv, __pyx_t_2) < 0) __PYX_ERR(0, 190, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_dtls_recv, __pyx_t_2) < 0) __PYX_ERR(0, 193, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "dtls.pyx":207
+  /* "dtls.pyx":210
  * 
  * 
  * def dtls_load_certificate_pem_file(uintptr_t ctx_ptr, str filename):             # <<<<<<<<<<<<<<
  *     cdef SSL_CTX *ctx = <SSL_CTX *>ctx_ptr
  *     if SSL_CTX_use_certificate_file(ctx, filename.encode(), SSL_FILETYPE_PEM) != 1:
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_4dtls_23dtls_load_certificate_pem_file, 0, __pyx_n_s_dtls_load_certificate_pem_file, NULL, __pyx_n_s_dtls, __pyx_d, ((PyObject *)__pyx_codeobj__40)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 207, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_4dtls_25dtls_load_certificate_pem_file, 0, __pyx_n_s_dtls_load_certificate_pem_file, NULL, __pyx_n_s_dtls, __pyx_d, ((PyObject *)__pyx_codeobj__41)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 210, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_dtls_load_certificate_pem_file, __pyx_t_2) < 0) __PYX_ERR(0, 207, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_dtls_load_certificate_pem_file, __pyx_t_2) < 0) __PYX_ERR(0, 210, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "dtls.pyx":213
+  /* "dtls.pyx":216
  * 
  * 
  * def dtls_load_private_private_key_pem_file(uintptr_t ctx_ptr, str filename):             # <<<<<<<<<<<<<<
  *     cdef SSL_CTX *ctx = <SSL_CTX *>ctx_ptr
  *     if SSL_CTX_use_PrivateKey_file(ctx, filename.encode(), SSL_FILETYPE_PEM) != 1:
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_4dtls_25dtls_load_private_private_key_pem_file, 0, __pyx_n_s_dtls_load_private_private_key_pe, NULL, __pyx_n_s_dtls, __pyx_d, ((PyObject *)__pyx_codeobj__41)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 213, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_4dtls_27dtls_load_private_private_key_pem_file, 0, __pyx_n_s_dtls_load_private_private_key_pe, NULL, __pyx_n_s_dtls, __pyx_d, ((PyObject *)__pyx_codeobj__42)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 216, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_dtls_load_private_private_key_pe, __pyx_t_2) < 0) __PYX_ERR(0, 213, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_dtls_load_private_private_key_pe, __pyx_t_2) < 0) __PYX_ERR(0, 216, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "dtls.pyx":1
@@ -10050,7 +10227,7 @@ __Pyx_PyType_GetName(PyTypeObject* tp)
     if (unlikely(name == NULL) || unlikely(!PyUnicode_Check(name))) {
         PyErr_Clear();
         Py_XDECREF(name);
-        name = __Pyx_NewRef(__pyx_n_s__42);
+        name = __Pyx_NewRef(__pyx_n_s__43);
     }
     return name;
 }

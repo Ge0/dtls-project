@@ -106,6 +106,14 @@ def create_dtls_socket():
         raise OSError("Cannot create a UDP socket.")
     return sockfd
 
+def attach_socket_to_ssl(uintptr_t ssl_ptr, int sockfd):
+    cdef SSL *ssl = <SSL *>ssl_ptr
+    cdef BIO *bio = BIO_new_dgram(sockfd, 1)
+    if bio == NULL:
+        raise MemoryError("Cannot create a BIO DTLS.")
+    
+    SSL_set_bio(ssl, bio, bio)
+
 
 def dtls_bind(int sockfd, int port, str ip="127.0.0.1"):
     cdef sockaddr_in server_addr
@@ -121,11 +129,6 @@ def dtls_bind(int sockfd, int port, str ip="127.0.0.1"):
 
 def dtls_connect(uintptr_t ssl_ptr, int sockfd, str ip, int port):
     cdef SSL *ssl = <SSL *>ssl_ptr
-    cdef BIO *bio = BIO_new_dgram(sockfd, 1)
-    if bio == NULL:
-        raise MemoryError("Cannot create a BIO DTLS.")
-    
-    SSL_set_bio(ssl, bio, bio)
 
     SSL_set_options(ssl, SSL_OP_NO_TICKET)
     cdef sockaddr_in server_addr
@@ -137,7 +140,7 @@ def dtls_connect(uintptr_t ssl_ptr, int sockfd, str ip, int port):
     if connect(sockfd, <const sockaddr *>&server_addr, sizeof(server_addr)) < 0:
         raise OSError("Cannot connect to the UDP socket.")
 
-    BIO_ctrl(bio, BIO_CTRL_DGRAM_CONNECT, 0, &server_addr)
+    # BIO_ctrl(bio, BIO_CTRL_DGRAM_CONNECT, 0, &server_addr)
 
 
 def attach_socket_to_ssl(uintptr_t ssl_ptr, int sockfd):
