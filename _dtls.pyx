@@ -41,6 +41,7 @@ cdef extern from "sys/socket.h":
 
 cdef extern from "openssl/bio.h":
     ctypedef struct BIO
+    int BIO_CTRL_DGRAM_SET_MTU
     BIO *BIO_new_dgram(int fd, int close_flag)
     int BIO_ctrl(BIO *bp, int cmd, long larg, void *parg)
 
@@ -106,14 +107,6 @@ def create_dtls_socket():
         raise OSError("Cannot create a UDP socket.")
     return sockfd
 
-def attach_socket_to_ssl(uintptr_t ssl_ptr, int sockfd):
-    cdef SSL *ssl = <SSL *>ssl_ptr
-    cdef BIO *bio = BIO_new_dgram(sockfd, 1)
-    if bio == NULL:
-        raise MemoryError("Cannot create a BIO DTLS.")
-    
-    SSL_set_bio(ssl, bio, bio)
-
 
 def dtls_bind(int sockfd, int port, str ip="127.0.0.1"):
     cdef sockaddr_in server_addr
@@ -143,13 +136,26 @@ def dtls_connect(uintptr_t ssl_ptr, int sockfd, str ip, int port):
     # BIO_ctrl(bio, BIO_CTRL_DGRAM_CONNECT, 0, &server_addr)
 
 
-def attach_socket_to_ssl(uintptr_t ssl_ptr, int sockfd):
+def ssl_set_bio(uintptr_t ssl_ptr, uintptr_t bio_ptr):
+    cdef SSL *ssl = <SSL *>ssl_ptr
+    cdef BIO *bio = <BIO *>bio_ptr
+    if bio == NULL:
+        raise MemoryError("Cannot create a BIO DTLS.")
+
+    SSL_set_bio(ssl, bio, bio)
+
+
+def bio_new_dgram(uintptr_t ssl_ptr, int sockfd):
     cdef SSL *ssl = <SSL *>ssl_ptr
     cdef BIO *bio = BIO_new_dgram(sockfd, 1)
     if bio == NULL:
         raise MemoryError("Cannot create a BIO DTLS.")
-    
-    SSL_set_bio(ssl, bio, bio)
+    return <uintptr_t>bio
+
+
+def bio_set_mtu(uintptr_t bio_ptr, long mtu):
+    cdef BIO *bio = <BIO *>bio_ptr
+    BIO_ctrl(bio, BIO_CTRL_DGRAM_SET_MTU, mtu, NULL)
 
 
 def dtls_accept(uintptr_t ssl_ptr):

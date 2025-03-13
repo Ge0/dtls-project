@@ -2,11 +2,13 @@ import socket
 from dtls import (
     create_dtls_context,
     create_dtls_socket,
-    attach_socket_to_ssl,
     create_ssl_handle,
     dtls_handshake,
     dtls_connect,
-    dtls_send
+    dtls_send,
+    bio_new_dgram,
+    bio_set_mtu,
+    ssl_set_bio
 )
 
 # 1. Créer le contexte DTLS
@@ -22,11 +24,13 @@ sockfd = create_dtls_socket()
 
 print(f"Socket dtls créé: {hex(sockfd)}")
 
-attach_socket_to_ssl(ssl, sockfd)
+bio = bio_new_dgram(ssl, sockfd)
+ssl_set_bio(ssl, bio)
+bio_set_mtu(bio, 1400)
 
 print(f"Socket attachée.")
 
-dtls_connect(ctx, sockfd, "172.19.112.1", 7777)
+dtls_connect(ctx, sockfd, "127.0.0.1", 7777)
 
 print("Connexion O.K.")
 
